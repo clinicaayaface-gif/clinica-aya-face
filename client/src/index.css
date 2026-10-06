@@ -358,3 +358,23 @@ em { color: var(--gold); font-style: normal; }
   .constellation-stage-back { opacity: .38; }
   .constellation-stage-face { opacity: .78; }
 }
+
+/* Ajustes solicitados nesta revisão */
+.contact-line span { color: #241a3d !important; font-weight: 600; }
+.contact-line span a { color: #241a3d !important; text-decoration: underline; text-decoration-color: rgba(36,26,61,.35); text-underline-offset: 3px; }
+.contact-line svg { color: #241a3d; flex: 0 0 auto; }
+.section-pad { padding-top: 84px; padding-bottom: 84px; }
+.lead-section { padding-top: 82px; padding-bottom: 82px; }
+.statement { padding-top: 82px; padding-bottom: 88px; }
+.experience-grid { gap: 72px; }
+.procedure-group + .procedure-group { margin-top: 78px; }
+.page-hero { padding-top: 92px; padding-bottom: 82px; }
+.blog-hero { padding-bottom: 84px; }
+@media (max-width: 800px) {
+  .section-pad { padding-top: 56px; padding-bottom: 56px; }
+  .lead-section { padding-top: 58px; padding-bottom: 58px; }
+  .statement { padding-top: 60px; padding-bottom: 64px; }
+  .procedure-group + .procedure-group { margin-top: 54px; }
+  .page-hero { padding-top: 78px; padding-bottom: 62px; }
+  .blog-hero { padding-bottom: 64px; }
+}

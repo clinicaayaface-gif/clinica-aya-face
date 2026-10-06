@@ -13,7 +13,7 @@ type Point = {
   ambient: boolean;
 };
 
-const COLORS = ["#8052ff", "#8052ff", "#8052ff", "#ffb829", "#15c2a0", "#e23fb0", "#3d8bff", "#b38cff"];
+const COLORS = ["#8052ff", "#8052ff", "#8052ff", "#ffffff", "#15c2a0", "#e23fb0", "#3d8bff", "#b38cff"];
 
 /**
  * Ajustes rápidos da constelação.
