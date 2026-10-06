@@ -25,13 +25,13 @@ const COLORS = ["#8052ff", "#8052ff", "#8052ff", "#ffb829", "#15c2a0", "#e23fb0"
  * - maxFps: limite de frames para não sobrecarregar o navegador.
  */
 export const CONSTELLATION_TUNING = {
-  speed: 2.05,
-  pointDrift: 7,
-  ambientDrift: 14,
+  speed: 1.35,
+  pointDrift: 4.5,
+  ambientDrift: 8,
   glow: 0.82,
   glowBlur: 5,
   density: 0.78,
-  maxFps: 36,
+  maxFps: 30,
 };
 
 function rgba(alpha: number) {
@@ -39,83 +39,91 @@ function rgba(alpha: number) {
 }
 
 function drawFace(ctx: CanvasRenderingContext2D) {
-  // Contorno frontal, delicado e simétrico: a animação fica nas partículas, não no rosto.
   ctx.lineCap = ctx.lineJoin = "round";
-  ctx.strokeStyle = rgba(0.9);
-  ctx.lineWidth = 4;
+  ctx.strokeStyle = rgba(0.75);
+  ctx.lineWidth = 5;
   ctx.beginPath();
-  ctx.moveTo(300, 42);
-  ctx.bezierCurveTo(410, 42, 466, 126, 458, 276);
-  ctx.bezierCurveTo(452, 414, 404, 548, 300, 648);
-  ctx.bezierCurveTo(196, 548, 148, 414, 142, 276);
-  ctx.bezierCurveTo(134, 126, 190, 42, 300, 42);
+  ctx.moveTo(235, 610);
+  ctx.quadraticCurveTo(232, 680, 150, 712);
+  ctx.moveTo(365, 610);
+  ctx.quadraticCurveTo(368, 680, 450, 712);
   ctx.stroke();
 
-  // Cabelos longos e leves, com linhas que reforçam a silhueta feminina.
-  ctx.strokeStyle = rgba(0.72);
-  ctx.lineWidth = 3;
-  for (let i = 0; i < 7; i++) {
+  const head = () => {
     ctx.beginPath();
-    ctx.moveTo(300, 42);
-    ctx.bezierCurveTo(204 - i * 8, 48 + i * 5, 116 - i * 4, 182, 110 - i * 3, 370 + i * 13);
-    ctx.bezierCurveTo(108 - i * 2, 500, 150 + i * 6, 616, 222 + i * 7, 696);
+    ctx.moveTo(300, 46);
+    ctx.bezierCurveTo(430, 46, 486, 170, 478, 300);
+    ctx.bezierCurveTo(472, 450, 410, 612, 300, 664);
+    ctx.bezierCurveTo(190, 612, 128, 450, 122, 300);
+    ctx.bezierCurveTo(114, 170, 170, 46, 300, 46);
+    ctx.closePath();
+  };
+
+  head();
+  ctx.fillStyle = rgba(0.18);
+  ctx.fill();
+  head();
+  ctx.strokeStyle = rgba(1);
+  ctx.lineWidth = 6;
+  ctx.stroke();
+
+  ctx.lineWidth = 5;
+  ctx.strokeStyle = rgba(0.8);
+  for (let i = 0; i < 9; i++) {
+    ctx.beginPath();
+    ctx.moveTo(300, 40 + i * 1.5);
+    ctx.bezierCurveTo(210 - i * 12, 52 + i * 5, 150 - i * 5, 130, 128 - i * 3, 260 + i * 8);
     ctx.stroke();
     ctx.beginPath();
-    ctx.moveTo(300, 42);
-    ctx.bezierCurveTo(396 + i * 8, 48 + i * 5, 484 + i * 4, 182, 490 + i * 3, 370 + i * 13);
-    ctx.bezierCurveTo(492 + i * 2, 500, 450 - i * 6, 616, 378 - i * 7, 696);
+    ctx.moveTo(300, 40 + i * 1.5);
+    ctx.bezierCurveTo(390 + i * 12, 52 + i * 5, 450 + i * 5, 130, 472 + i * 3, 260 + i * 8);
     ctx.stroke();
   }
 
-  // Sobrancelhas e olhos amendoados.
-  ctx.strokeStyle = rgba(0.92);
-  ctx.lineWidth = 5;
   for (const x of [215, 385]) {
+    ctx.lineWidth = 6;
     ctx.beginPath();
-    ctx.moveTo(x - 55, 258);
-    ctx.quadraticCurveTo(x, 225, x + 55, 258);
-    ctx.stroke();
-    ctx.lineWidth = 3;
-    ctx.beginPath();
-    ctx.moveTo(x - 48, 294);
-    ctx.quadraticCurveTo(x, 262, x + 48, 294);
-    ctx.quadraticCurveTo(x, 320, x - 48, 294);
+    ctx.moveTo(x - 52, 296);
+    ctx.quadraticCurveTo(x, 262, x + 52, 296);
+    ctx.quadraticCurveTo(x, 326, x - 52, 296);
+    ctx.closePath();
     ctx.stroke();
     ctx.fillStyle = rgba(0.95);
-    ctx.beginPath(); ctx.arc(x, 293, 12, 0, Math.PI * 2); ctx.fill();
-    ctx.lineWidth = 4;
+    ctx.beginPath();
+    ctx.arc(x, 294, 21, 0, 7);
+    ctx.fill();
   }
 
-  // Nariz fino e boca suave.
-  ctx.strokeStyle = rgba(0.68);
-  ctx.lineWidth = 4;
+  ctx.lineWidth = 5;
+  ctx.strokeStyle = rgba(0.6);
   ctx.beginPath();
-  ctx.moveTo(287, 292);
-  ctx.quadraticCurveTo(278, 370, 270, 426);
-  ctx.quadraticCurveTo(282, 438, 300, 432);
-  ctx.quadraticCurveTo(318, 438, 330, 426);
-  ctx.quadraticCurveTo(322, 370, 313, 292);
+  ctx.moveTo(280, 300);
+  ctx.quadraticCurveTo(268, 380, 262, 432);
+  ctx.moveTo(320, 300);
+  ctx.quadraticCurveTo(332, 380, 338, 432);
   ctx.stroke();
   ctx.strokeStyle = rgba(1);
-  ctx.lineWidth = 5;
+  ctx.lineWidth = 7;
   ctx.beginPath();
-  ctx.moveTo(256, 470);
-  ctx.quadraticCurveTo(300, 444, 344, 470);
-  ctx.quadraticCurveTo(300, 506, 256, 470);
+  ctx.moveTo(258, 440);
+  ctx.quadraticCurveTo(300, 470, 342, 440);
   ctx.stroke();
+  ctx.fillStyle = rgba(0.95);
   ctx.beginPath();
-  ctx.moveTo(268, 474);
-  ctx.quadraticCurveTo(300, 486, 332, 474);
-  ctx.stroke();
-
-  // Pescoço e ombros elegantes.
-  ctx.strokeStyle = rgba(0.78);
-  ctx.lineWidth = 5;
+  ctx.moveTo(232, 528);
+  ctx.quadraticCurveTo(268, 498, 300, 512);
+  ctx.quadraticCurveTo(332, 498, 368, 528);
+  ctx.quadraticCurveTo(300, 540, 232, 528);
+  ctx.fill();
+  ctx.fillStyle = rgba(0.7);
   ctx.beginPath();
-  ctx.moveTo(228, 608); ctx.quadraticCurveTo(230, 674, 154, 718);
-  ctx.moveTo(372, 608); ctx.quadraticCurveTo(370, 674, 446, 718);
-  ctx.stroke();
+  ctx.moveTo(236, 530);
+  ctx.quadraticCurveTo(300, 544, 364, 530);
+  ctx.quadraticCurveTo(334, 586, 300, 588);
+  ctx.quadraticCurveTo(266, 586, 236, 530);
+  ctx.fill();
 }
+
 function drawSyringe(ctx: CanvasRenderingContext2D) {
   ctx.translate(350, 265);
   ctx.rotate(-0.55);

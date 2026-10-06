@@ -347,3 +347,14 @@ em { color: var(--gold); font-style: normal; }
   .constellation-stage-face { opacity: .68; }
   .contact-whatsapp { margin-top: 16px; }
 }
+
+/* Composição solicitada: constelação viva no fundo e o primeiro rosto acima dela. */
+.constellation-stage-back { z-index: 0; opacity: .52; pointer-events: none; }
+.constellation-stage-back .constellation-canvas { filter: drop-shadow(0 0 18px rgba(128,82,255,.38)); }
+.constellation-stage-face { z-index: 1 !important; animation: none !important; transform: none !important; opacity: .92; pointer-events: none; }
+.constellation-stage-face .constellation-canvas { position: relative; z-index: 1; filter: drop-shadow(0 0 18px rgba(255,255,255,.22)); }
+.constellation-hero .hero-content { z-index: 3; }
+@media (max-width: 800px) {
+  .constellation-stage-back { opacity: .38; }
+  .constellation-stage-face { opacity: .78; }
+}
