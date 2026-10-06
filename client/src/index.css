@@ -184,3 +184,118 @@ em { color:var(--gold-light); font-style:normal; }
   .statement-constellation { width:100%; }
 }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior:auto!important; } }
+
+
+/* Aya Face — direção visual DESIGN.md: dark-stage, tipografia escultural e constelação */
+:root {
+  --ink: #000000;
+  --paper: #000000;
+  --white: #ffffff;
+  --muted: #9a9a9a;
+  --silver: #bdbdbd;
+  --gold: #ffb829;
+  --gold-light: #ffb829;
+  --violet: #8052ff;
+  --teal: #15846e;
+  --line: rgba(255,255,255,.18);
+  --serif: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --sans: "Inter", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html, body { background: #000; color: #fff; font-family: var(--sans); font-weight: 400; }
+body { font-size: 16px; line-height: 1.5; }
+.container { width: min(1280px, calc(100% - 60px)); }
+.site-header { position: absolute; background: transparent; border: 0; }
+.header-inner { height: 102px; }
+.brand-logo { width: 132px; height: 48px; object-fit: contain; padding: 0; background: #fff; border-radius: 24px; }
+.brand-compact .brand-logo { width: 122px; height: 44px; }
+nav { gap: 30px; font-size: 14px; }
+nav a { color: #9a9a9a; font-weight: 600; text-transform: uppercase; letter-spacing: .025em; }
+nav a:hover, nav a.active { color: #fff; }
+.nav-cta, .button-gold { background: var(--violet); border: 0; border-radius: 24px; color: #fff !important; padding: 14px 18px; }
+.hero, .hero-content { min-height: min(820px, 100vh); }
+.hero { background: #000; }
+.hero-image { background: radial-gradient(circle at 73% 44%, rgba(128,82,255,.18), transparent 25%), radial-gradient(circle at 83% 65%, rgba(21,132,110,.13), transparent 26%); opacity: 1; }
+.hero-content { padding-top: 102px; }
+.hero-copy { max-width: 620px; }
+.hero-copy h1, .page-hero h1 { font-family: var(--sans); font-weight: 400; letter-spacing: -.06em; line-height: .93; }
+.hero-copy h1 { font-size: clamp(72px, 9.2vw, 126px); }
+h1, h2, h3 { font-family: var(--sans); font-weight: 400; letter-spacing: -.045em; line-height: 1.08; }
+h2 { font-size: clamp(48px, 6vw, 86px); }
+h3 { font-size: 28px; }
+em { color: var(--gold); font-style: normal; }
+.eyebrow, .label, .card-tag, .footer-label { color: var(--gold); font-size: 12px; letter-spacing: .025em; }
+.hero-copy p, .page-hero p { color: var(--silver); max-width: 500px; font-size: 18px; font-weight: 200; }
+.button { border-radius: 24px; font-weight: 600; letter-spacing: .025em; }
+.button-dark { background: var(--violet); color: #fff; }
+.button-outline { border-color: rgba(255,255,255,.6); color: #fff; background: transparent; }
+.ghost, .text-link, .back-link { color: #fff; border-color: rgba(255,255,255,.55); }
+.marquee { background: #000; color: var(--gold); border-top: 1px solid rgba(255,255,255,.16); border-bottom: 1px solid rgba(255,255,255,.16); }
+.section-pad { padding: 120px 0; }
+.intro, .treatments, .blog-teaser, .experience, .services-catalog, .page-main, .article-page, .legal-page, .editor-page { background: #000; color: #fff; }
+.intro-copy p:not(.lead), .treatment-body p, .procedure-card p, .procedure-group-intro p, .technology-intro p, .blog-card p, .footer-note, .lead-aside p, .editor-gate p, .legal-page p { color: var(--silver); }
+.lead { color: #fff; font-weight: 400; }
+.treatment-grid { gap: 60px 30px; }
+.treatment-card, .procedure-card, .featured-story, .story-note, .technology-card { background: transparent; border: 0; }
+.treatment-media { border-radius: 24px; background: #0b0b0b; }
+.treatment-body { padding: 24px 0 12px; }
+.treatment-body h3 { font-size: 36px; }
+.round-link { border: 0; color: var(--violet); }
+.round-link:hover { background: var(--violet); color: #fff; }
+.statement, .technology-section, .lead-section { background: #000; color: #fff; }
+.statement { border-top: 1px solid rgba(255,255,255,.12); border-bottom: 1px solid rgba(255,255,255,.12); }
+.statement p { font-family: var(--sans); font-weight: 400; }
+.lead-form { background: transparent; padding: 0; box-shadow: none; }
+.lead-section-grid { grid-template-columns: 1fr 1fr; }
+.lead-form input, .editor-form input, .editor-form textarea, .editor-form select { color: #fff; background: transparent; border: 0; border-bottom: 1px solid rgba(255,255,255,.32); border-radius: 0; padding: 14px 0; }
+.lead-form input:focus, .editor-form input:focus, .editor-form textarea:focus, .editor-form select:focus { border-color: var(--violet); }
+.lead-form label, .editor-form label { color: var(--silver); }
+.form-intro { border-bottom: 0; }
+.blog-teaser-grid, .featured-story { gap: 42px; }
+.featured-story img, .blog-card-image, .experience-image { border-radius: 24px; overflow: hidden; }
+.featured-story > div { padding: 20px 0; }
+.story-note { padding: 20px 0; }
+.site-footer { background: #000; border-top: 1px solid rgba(255,255,255,.14); }
+.footer-grid a, .footer-grid span { color: var(--muted); }
+.footer-label { color: var(--gold); }
+.footer-bottom { border-color: rgba(255,255,255,.14); color: #666; }
+.page-hero { background: #000; padding: 170px 0 120px; }
+.procedure-grid { background: transparent; border: 0; gap: 40px 60px; }
+.procedure-card { min-height: 230px; padding: 0; }
+.procedure-card h3 { margin: 24px 0 12px; }
+.technology-grid { gap: 48px 60px; }
+.technology-card { min-height: 340px; padding: 0; }
+.technology-card-top, .technology-meta, .technology-card ul { border-color: rgba(255,255,255,.16); }
+.technology-card h3 { color: #fff; font-size: 36px; }
+.mini-cta { background: #000; color: #fff; border-top: 1px solid rgba(255,255,255,.16); border-bottom: 1px solid rgba(255,255,255,.16); }
+.mini-cta em { color: var(--gold); }
+.blog-card-image span { background: var(--violet); color: #fff; border-radius: 999px; }
+.blog-meta { color: #777; }
+.article-excerpt { color: var(--silver); font-weight: 200; }
+.article-end { border-color: rgba(255,255,255,.16); color: var(--gold); }
+.editor-sidebar, .editor-post { border-color: rgba(255,255,255,.16); }
+.editor-post small { color: var(--gold); }
+.whatsapp-float { background: var(--teal); box-shadow: none; }
+.constellation-stage-face { width: min(58vw, 760px); right: 2vw; top: 8%; }
+.page-hero-constellation { width: min(56vw, 700px); right: 2vw; top: 3%; }
+
+@media (max-width: 800px) {
+  .container { width: min(100% - 34px, 600px); }
+  .header-inner { height: 78px; }
+  .brand-logo { width: 112px; height: 42px; }
+  .site-header nav { background: #000; border-top: 1px solid rgba(255,255,255,.16); }
+  .hero, .hero-content { min-height: 720px; }
+  .hero-content { padding-top: 120px; align-items: flex-start; }
+  .hero-copy h1, .page-hero h1 { font-size: 66px; }
+  .hero-copy p, .page-hero p { font-size: 17px; }
+  .constellation-stage-face { width: 100vw; right: -28vw; top: 34%; opacity: .76; }
+  .page-hero { padding: 120px 0 96px; }
+  .page-hero-constellation { width: 100vw; right: -30vw; top: 28%; opacity: .7; }
+  .lead-section-grid { grid-template-columns: 1fr; }
+  .treatment-grid { gap: 44px; }
+  .treatment-card { min-width: 285px; }
+  .procedure-grid, .technology-grid { grid-template-columns: 1fr; gap: 44px; }
+  .procedure-card, .technology-card { min-height: 0; }
+  .blog-teaser-grid, .featured-story { grid-template-columns: 1fr; }
+  .featured-story > div, .story-note { padding: 18px 0; }
+}
