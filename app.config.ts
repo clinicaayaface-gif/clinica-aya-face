@@ -1,0 +1,3 @@
+export default {
+  logoUrl: "https://private-us-east-1.manuscdn.com/user_upload_by_module/session_file/310519663994036312/SlmpGnrKGYXKpWZk.jpeg?Expires=1822406285&Signature=kBFUxq7NBepkIIo6X2c7RgTKAbKsnfRFjQRier-rbQ-TIgzu3uXVucvFK441Cu9Av-Wj0HEkfS3X-vaLylmTh1-qEkJ92YjIttbSXbHz0HSSfQy18sp71TluKmP8~osK3ldp3qwgmDJqbS6-Bc0qIdayXtN45QqSjyOuCk4KUTU4OfekROMCfklgYfzrEJ-sEqXhCfc6PGwAy1znQc83ZwPcpePAtc74swXVBHLNfoqDkvnq8IRGkFnL9-lh7-mO8aV2fLJk4qA13r5Tq4QvmNBdZ2Yxq3UWbTG-UBT7mj5Kjl2bZebZEyl3k3wk-QnbrYLI31G9D3wzDXa0zhjwFg__&Key-Pair-Id=K2HSFNDJXOU9YS"
+};

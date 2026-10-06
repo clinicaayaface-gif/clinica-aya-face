@@ -1,0 +1,1 @@
+{"routes":[{"path":"/","title":"Aya Face — Estética Avançada"},{"path":"/servicos","title":"Tratamentos"},{"path":"/blog","title":"Diário Aya"},{"path":"/blog/:slug","title":"Artigo"},{"path":"/editor","title":"Editor de conteúdo"},{"path":"/privacidade","title":"Privacidade"}]}
