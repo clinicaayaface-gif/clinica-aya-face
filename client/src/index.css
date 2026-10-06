@@ -324,3 +324,26 @@ em { color: var(--gold); font-style: normal; }
   .brand-glyph { font-size: 27px; }
   .constellation-stage-face { animation-duration: 34s; }
 }
+
+/* Refinamento Aya Face: logo original transparente e movimento orgânico */
+.brand-logo-image { display: block; width: 166px; height: 74px; object-fit: contain; object-position: center; }
+.footer-grid .brand-logo-image { width: 148px; height: 66px; }
+.brand-lockup, .brand-glyph, .brand-wordmark { display: none !important; }
+.constellation-stage-face { animation: none !important; transform: none !important; }
+.constellation-stage-face .constellation-canvas { opacity: .92; filter: drop-shadow(0 0 16px rgba(128,82,255,.25)); }
+.constellation-stage:not(.constellation-stage-face) .constellation-canvas { filter: drop-shadow(0 0 12px rgba(255,255,255,.32)); }
+.whatsapp-float { background: #20c763 !important; color: #fff !important; box-shadow: 0 14px 32px rgba(32,199,99,.26) !important; }
+.whatsapp-float:hover { background: #17ad53 !important; }
+.whatsapp-icon { width: 23px; height: 23px; flex: 0 0 auto; }
+.contact-whatsapp { display: inline-flex; align-items: center; gap: 10px; margin-top: 20px; padding: 12px 17px; border-radius: 999px; background: #20c763; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; box-shadow: 0 9px 22px rgba(32,199,99,.18); }
+.contact-whatsapp:hover { background: #17ad53; transform: translateY(-2px); }
+.contact-line a { display: inline-block; color: var(--ink); }
+.lead-form input, .lead-form input:focus { color: #171614 !important; background: #fffdf9 !important; opacity: 1; }
+.lead-form input::placeholder { color: #716d66 !important; opacity: 1; }
+.lead-form label { color: #171614; }
+@media (max-width: 800px) {
+  .brand-logo-image { width: 126px; height: 58px; }
+  .footer-grid .brand-logo-image { width: 142px; height: 64px; }
+  .constellation-stage-face { opacity: .68; }
+  .contact-whatsapp { margin-top: 16px; }
+}
