@@ -411,3 +411,33 @@ em { color: var(--gold); font-style: normal; }
   .button-whatsapp { width: auto; }
   .visual-cycle-woman { object-position: center 38%; }
 }
+
+/* Formação expansiva: as partículas ocupam o palco e se organizam até revelar o rosto. */
+.constellation-stage-face { inset: 0; width: 100%; height: 100%; right: auto; top: 0; opacity: .86; }
+.visual-cycle { width: 100%; height: 100%; }
+.visual-cycle-constellation .constellation-canvas { width: 100%; height: 100%; object-fit: contain; }
+.visual-cycle-woman { object-position: center 42%; }
+.statement-woman-cycle { transform: scale(1.5); object-position: center 12%; }
+.statement-visual-cycle { overflow: hidden; }
+.page-hero-constellation { width: min(72vw, 900px); right: -3vw; top: -7%; opacity: 1; }
+.page-hero-constellation .constellation-canvas { transform: scale(1.28); transform-origin: center; }
+.section-pad { padding-top: 60px; padding-bottom: 60px; }
+.lead-section { padding-top: 62px; padding-bottom: 62px; }
+.statement { padding-top: 60px; padding-bottom: 66px; }
+.experience-grid { gap: 48px; }
+.procedure-group + .procedure-group { margin-top: 50px; }
+.page-hero { padding-top: 78px; padding-bottom: 68px; }
+.location-section { background: #08060e; border-top: 1px solid rgba(255,255,255,.14); border-bottom: 1px solid rgba(255,255,255,.14); }
+.location-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 60px; align-items: center; }
+.location-grid h2 { margin: 14px 0 20px; }
+.location-grid p { color: var(--silver); font-size: 18px; }
+.location-map { min-height: 300px; border: 1px solid rgba(255,255,255,.18); border-radius: 20px; overflow: hidden; background: #111; }
+.location-map iframe { display: block; width: 100%; height: 300px; border: 0; filter: grayscale(1) invert(.9) contrast(.86); }
+@media (max-width: 800px) {
+  .constellation-stage-face { inset: 0; width: 100%; height: 100%; right: auto; top: 0; opacity: .66; }
+  .page-hero-constellation { width: 125vw; right: -42vw; top: -2%; }
+  .page-hero-constellation .constellation-canvas { transform: scale(1.18); }
+  .location-grid { grid-template-columns: 1fr; gap: 28px; }
+  .location-map, .location-map iframe { min-height: 240px; height: 240px; }
+  .section-pad { padding-top: 48px; padding-bottom: 48px; }
+}
