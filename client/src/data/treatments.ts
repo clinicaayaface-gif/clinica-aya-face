@@ -13,9 +13,9 @@ export type Technology = {
 };
 
 export const featuredTreatments = [
-  { number: "01", title: "Lifting sem cirurgia", description: "Tecnologias de ultrassom e radiofrequência para estimular colágeno e devolver firmeza com naturalidade.", image: "/assets/aya-treatment.jpg", tag: "Ultraformer · Liftera" },
-  { number: "02", title: "Pele luminosa", description: "Protocolos para textura, manchas e viço, combinando laser, skincare e acompanhamento próximo.", image: "/assets/aya-editorial.jpg", tag: "Fotona · Lavieen" },
-  { number: "03", title: "Contorno e definição", description: "Estratégias faciais e corporais para valorizar contornos, respeitando proporções e individualidade.", image: "/assets/aya-hero.jpg", tag: "Bioestimuladores · Corpo" },
+  { number: "01", title: "Lifting sem cirurgia", description: "Tecnologias de ultrassom e radiofrequência para estimular colágeno e devolver firmeza com naturalidade.", image: "/assets/procedure-uthera.png", tag: "Ultraformer · Uthera" },
+  { number: "02", title: "Pele luminosa", description: "Protocolos para textura, manchas e viço, combinando laser, skincare e acompanhamento próximo.", image: "/assets/procedure-facial-cleaning.png", tag: "Lavieen · Limpeza de Pele" },
+  { number: "03", title: "Contorno e definição", description: "Estratégias faciais e corporais para valorizar contornos, respeitando proporções e individualidade.", image: "/assets/procedure-bioestimulador.png", tag: "Bioestimuladores · Preenchedores" },
 ];
 
 export const facialProcedures: Procedure[] = [

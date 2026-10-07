@@ -447,3 +447,13 @@ em { color: var(--gold); font-style: normal; }
 .statement-woman-cycle { transform: scale(2.1); object-position: center 8%; }
 .statement-constellation .constellation-canvas { width: 100%; height: 100%; }
 .location-map iframe { filter: none; }
+
+
+/* Segunda constelação em escala de seção: partículas espalhadas revelam o rosto jovem. */
+.statement-visual-cycle { width: min(920px, 100vw); height: min(58vh, 560px); margin: 0 auto -44px; }
+.statement-visual-cycle .statement-constellation, .statement-woman-cycle { width: 100%; height: 100%; }
+.statement-woman-cycle { transform: scale(2.15); object-position: center 8%; }
+@media (max-width: 800px) {
+  .statement-visual-cycle { width: 100%; height: 430px; margin-bottom: -30px; }
+  .statement-woman-cycle { transform: scale(2.2); object-position: center 9%; }
+}

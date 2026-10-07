@@ -123,9 +123,16 @@ export async function ensureBlogSeed() {
   if (!db) return;
   try {
     for (const post of blogSeedPosts) {
-      const existing = await db.select({ id: blogPosts.id }).from(blogPosts).where(eq(blogPosts.slug, post.slug)).limit(1);
+      const existing = await db.select().from(blogPosts).where(eq(blogPosts.slug, post.slug)).limit(1);
       if (!existing.length) {
         await db.insert(blogPosts).values(post);
+      } else {
+        const current = existing[0];
+        const isBotoxPost = post.slug.includes("botox");
+        const needsContentRefresh = current.title.includes("Utera") || current.excerpt.includes("Utera") || current.content.includes("Utera") || (isBotoxPost && (!current.content.includes("Dysport") || !current.content.includes("Nabota") || !current.content.includes("Botox Allergan")));
+        if (needsContentRefresh) {
+          await db.update(blogPosts).set({ title: post.title, excerpt: post.excerpt, content: post.content, coverImage: post.coverImage, category: post.category, status: post.status, publishedAt: post.publishedAt }).where(eq(blogPosts.id, current.id));
+        }
       }
     }
   } catch (error) {

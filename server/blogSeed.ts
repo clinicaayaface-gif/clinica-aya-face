@@ -3,7 +3,7 @@ export const blogSeedPosts = [
     title: "O que é botox e como ele pode suavizar suas expressões",
     slug: "o-que-e-botox-e-como-ele-pode-suavizar-suas-expressoes",
     excerpt: "Entenda como a toxina botulínica atua nas linhas de expressão, quais cuidados considerar e como buscar uma aplicação segura em Jundiaí.",
-    content: `Botox é o nome popular pelo qual muitas pessoas conhecem a toxina botulínica. Em formulação purificada e diluída, aplicada em pequenas quantidades no músculo-alvo, ela bloqueia temporariamente alguns sinais nervosos e reduz a contração muscular local. Na estética, esse mecanismo pode suavizar linhas dinâmicas, aquelas que aparecem ou ficam mais marcadas com o movimento do rosto.
+    content: `Botox é o nome popular pelo qual muitas pessoas conhecem a toxina botulínica. Entre as marcas conhecidas estão Botox Allergan, Dysport e Nabota; cada produto tem bula, apresentação e unidades próprias, portanto não se deve comparar unidades entre marcas como se fossem equivalentes. Em formulação purificada e diluída, aplicada em pequenas quantidades no músculo-alvo, ela bloqueia temporariamente alguns sinais nervosos e reduz a contração muscular local. Na estética, esse mecanismo pode suavizar linhas dinâmicas, aquelas que aparecem ou ficam mais marcadas com o movimento do rosto.
 
 As regiões mais procuradas incluem linhas entre as sobrancelhas, linhas horizontais da testa e os chamados pés de galinha. A indicação, porém, não deve ser feita apenas pela fotografia ou por uma lista de áreas. Uma avaliação individual considera a anatomia, a força muscular, a qualidade da pele, o histórico de procedimentos e o resultado que a pessoa deseja preservar.
 
@@ -23,7 +23,7 @@ Dor, vermelhidão, inchaço ou hematoma podem ocorrer no local. Sintomas como vi
     title: "Quanto custa o botox e como avaliar preços e ofertas",
     slug: "quanto-custa-o-botox-e-como-avaliar-precos-e-ofertas",
     excerpt: "Preço de botox não é tudo: veja o que comparar em uma oferta, como conferir produto, profissional e segurança em Jundiaí.",
-    content: `Quanto custa o botox? Essa é uma das perguntas mais buscadas por quem procura toxina botulínica em Jundiaí, mas não existe um preço único ou uma tabela nacional capaz de representar todos os atendimentos. O orçamento depende das áreas avaliadas, do produto regularizado, da quantidade necessária, da experiência do profissional, da estrutura do serviço e do acompanhamento oferecido.
+    content: `Quanto custa o botox? Essa é uma das perguntas mais buscadas — e a marca também importa. Botox Allergan, Dysport e Nabota são nomes encontrados no mercado, mas cada produto tem apresentação, bula e unidades próprias. por quem procura toxina botulínica em Jundiaí, mas não existe um preço único ou uma tabela nacional capaz de representar todos os atendimentos. O orçamento depende das áreas avaliadas, do produto regularizado, da quantidade necessária, da experiência do profissional, da estrutura do serviço e do acompanhamento oferecido.
 
 Uma oferta com preço muito baixo pode parecer atraente, mas o valor isolado não permite comparar serviços equivalentes. Antes de decidir, peça por escrito quais regiões serão tratadas, qual marca e apresentação do produto serão utilizadas, quem é o profissional responsável, se consulta, aplicação e retorno estão incluídos e como funciona eventual revisão. Transparência é parte importante da segurança.
 
@@ -43,7 +43,7 @@ A escolha segura considera informação, rastreabilidade, qualificação e acomp
     title: "Quanto custa botox no rosto",
     slug: "quanto-custa-botox-no-rosto",
     excerpt: "Saiba por que o valor do botox facial depende das áreas e do planejamento e como solicitar um orçamento responsável em Jundiaí.",
-    content: `Quanto custa botox no rosto? O valor não pode ser definido de forma responsável apenas pelo nome do procedimento. O rosto pode envolver testa, região entre as sobrancelhas, pés de galinha e outras áreas, cada uma com anatomia, movimento e necessidade de planejamento diferentes. O orçamento deve vir depois de uma avaliação, e não substituir a avaliação.
+    content: `Quanto custa botox no rosto? O valor não pode ser definido — e a marca do produto é um dos itens que precisam aparecer no orçamento. Botox Allergan, Dysport e Nabota têm apresentações e unidades próprias, que não devem ser tratadas como equivalentes. de forma responsável apenas pelo nome do procedimento. O rosto pode envolver testa, região entre as sobrancelhas, pés de galinha e outras áreas, cada uma com anatomia, movimento e necessidade de planejamento diferentes. O orçamento deve vir depois de uma avaliação, e não substituir a avaliação.
 
 Para comparar valores de botox facial em Jundiaí, peça uma descrição clara das áreas previstas, do produto e da apresentação, da quantidade de unidades, da consulta, da aplicação e de eventuais retornos. Pergunte também quem fará o procedimento e em qual serviço ele será realizado. Assim, você evita comparar uma aplicação completa com uma oferta que cobre somente uma pequena área.
 
@@ -63,7 +63,7 @@ O melhor preço é aquele que vem acompanhado de informação e responsabilidade
     title: "Quem pode aplicar botox e como escolher o profissional",
     slug: "quem-pode-aplicar-botox-e-como-escolher-o-profissional",
     excerpt: "Veja como investigar habilitação, produto, clínica e licença sanitária antes de fazer toxina botulínica em Jundiaí e região.",
-    content: `Quem pode aplicar botox? A resposta exige cuidado, porque a atuação depende da formação, do conselho profissional, da legislação vigente, do tipo de procedimento e da regularidade do serviço. A Anvisa orienta que medicamentos sejam aplicados por profissional de saúde habilitado e em serviço autorizado pela Vigilância Sanitária. Um curso livre ou uma promessa em rede social não comprova essa habilitação.
+    content: `Quem pode aplicar botox? A resposta exige cuidado e também atenção à marca utilizada. Botox Allergan, Dysport e Nabota possuem bulas e apresentações próprias, e a escolha não deve ser feita apenas pelo nome comercial ou pelo preço., porque a atuação depende da formação, do conselho profissional, da legislação vigente, do tipo de procedimento e da regularidade do serviço. A Anvisa orienta que medicamentos sejam aplicados por profissional de saúde habilitado e em serviço autorizado pela Vigilância Sanitária. Um curso livre ou uma promessa em rede social não comprova essa habilitação.
 
 Ao escolher o profissional para botox em Jundiaí, procure informações verificáveis. Para médicos, confira CRM e especialidade nos canais oficiais e observe se há RQE quando o profissional se anuncia como especialista. Para outras categorias, verifique o conselho correspondente e o escopo legal da atuação. Como normas podem mudar, a clínica e o profissional devem esclarecer qual habilitação sustenta o procedimento oferecido.
 
@@ -80,12 +80,12 @@ Depois da aplicação, alterações como visão dupla ou borrada, pálpebras ca�
     publishedAt: new Date("2026-10-06T22:15:00Z"),
   },
   {
-    title: "Qual a diferença do Ultraformer e o Utera",
+    title: "Qual a diferença do Ultraformer e o Uthera",
     slug: "qual-a-diferenca-do-ultraformer-e-o-utera",
-    excerpt: "Entenda o que pode ser comparado entre Ultraformer e Utera, por que confirmar a tecnologia e como escolher com segurança em Jundiaí.",
-    content: `Qual a diferença do Ultraformer e o Utera? Antes de comparar resultados ou preços, é importante confirmar exatamente qual aparelho e qual fabricante estão sendo mencionados. Ultraformer é uma plataforma da Classys associada ao ultrassom micro e macrofocado, com diferentes modelos e cartuchos. Já o nome Utera aparece em comunicações profissionais, mas pode não identificar uma única plataforma, modelo ou ficha técnica pública.
+    excerpt: "Entenda o que pode ser comparado entre Ultraformer e Uthera, por que confirmar a tecnologia e como escolher com segurança em Jundiaí.",
+    content: `Qual a diferença do Ultraformer e o Uthera? Antes de comparar resultados ou preços, é importante confirmar exatamente qual aparelho e qual fabricante estão sendo mencionados. Ultraformer é uma plataforma da Classys associada ao ultrassom micro e macrofocado, com diferentes modelos e cartuchos. Já o nome Uthera aparece em comunicações profissionais, mas pode não identificar uma única plataforma, modelo ou ficha técnica pública.
 
-Por isso, “Utera” pode ser uma forma comercial, uma grafia diferente ou uma confusão com Ulthera/Ultherapy, que é outra marca. Não é seguro atribuir automaticamente ao Utera as especificações do Ultraformer, nem afirmar que os aparelhos são iguais ou que um é universalmente melhor. A clínica deve informar marca, modelo, fabricante, parâmetros e regularidade aplicável antes do tratamento.
+Por isso, “Uthera” pode ser uma forma comercial, uma grafia diferente ou uma confusão com Ulthera/Ultherapy, que é outra marca. Não é seguro atribuir automaticamente ao Uthera as especificações do Ultraformer, nem afirmar que os aparelhos são iguais ou que um é universalmente melhor. A clínica deve informar marca, modelo, fabricante, parâmetros e regularidade aplicável antes do tratamento.
 
 O Ultraformer III é descrito pelo fabricante como uma plataforma de ultrassom micro e macrofocado, com cartuchos destinados a diferentes profundidades e aplicações faciais ou corporais. O Ultraformer MPT apresenta outras modalidades e cartuchos. Esses dados ajudam a entender o equipamento, mas não são promessa de resultado individual nem substituem avaliação da anatomia e do objetivo.
 
@@ -93,7 +93,7 @@ A escolha do ultrassom microfocado em Jundiaí deve considerar área, profundida
 
 Ao pedir um orçamento, não pergunte somente quantas linhas ou disparos serão feitos. Solicite o nome completo do equipamento, modelo, fabricante, registro ou regularidade, área tratada, profissional responsável, cuidados e acompanhamento. A disponibilidade de uma tecnologia em um anúncio local não comprova seu registro, desempenho ou adequação ao seu caso.
 
-Se você está pesquisando Ultraformer ou Utera em Jundiaí, leve essa lista de perguntas para a avaliação na Aya Face. O protocolo deve ser escolhido com base em informação verificável, não apenas em um nome comercial. Este artigo é educativo e não substitui diagnóstico, indicação ou orientação individual de profissional habilitado.`,
+Se você está pesquisando Ultraformer ou Uthera em Jundiaí, leve essa lista de perguntas para a avaliação na Aya Face. O protocolo deve ser escolhido com base em informação verificável, não apenas em um nome comercial. Este artigo é educativo e não substitui diagnóstico, indicação ou orientação individual de profissional habilitado.`,
     coverImage: "/assets/aya-editorial.jpg",
     category: "Tecnologias · Jundiaí",
     status: "published" as const,
