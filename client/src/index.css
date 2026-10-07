@@ -461,3 +461,12 @@ em { color: var(--gold); font-style: normal; }
 
 /* Logo original aplicado sobre a foto da seção de protocolo. */
 .experience-image .image-stamp-logo { width: 84px; height: 84px; padding: 10px; object-fit: contain; border-radius: 50%; background: rgba(8,8,8,.82); border: 1px solid var(--gold-light); }
+
+
+/* Seringa do hero de Serviços em escala mais discreta. */
+.services-hero .page-hero-constellation { width: min(40vw, 480px); right: 5vw; top: 8%; }
+.services-hero .page-hero-constellation .constellation-canvas { transform: scale(.82); transform-origin: center; }
+@media (max-width: 800px) {
+  .services-hero .page-hero-constellation { width: 78vw; right: -18vw; top: 28%; }
+  .services-hero .page-hero-constellation .constellation-canvas { transform: scale(.78); }
+}
