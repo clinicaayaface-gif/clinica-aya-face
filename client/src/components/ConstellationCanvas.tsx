@@ -25,9 +25,9 @@ const COLORS = ["#8052ff", "#8052ff", "#8052ff", "#ffffff", "#15c2a0", "#e23fb0"
  * - maxFps: limite de frames para não sobrecarregar o navegador.
  */
 export const CONSTELLATION_TUNING = {
-  speed: 1.35,
-  pointDrift: 4.5,
-  ambientDrift: 8,
+  speed: 1.75,
+  pointDrift: 8,
+  ambientDrift: 14,
   glow: 0.82,
   glowBlur: 5,
   density: 0.78,
@@ -202,7 +202,7 @@ function build(draw: (ctx: CanvasRenderingContext2D) => void, width: number, hei
           x: x + random() * 6,
           y: y + random() * 6,
           color: Math.floor(random() * COLORS.length),
-          radius: 1.2 + random() * 2,
+          radius: 1.7 + random() * 2.4,
           phase: random() * 6.28,
           speed: 0.45 + random() * 0.9,
           alpha: 0.55 + random() * 0.45,
@@ -217,7 +217,7 @@ function build(draw: (ctx: CanvasRenderingContext2D) => void, width: number, hei
       x: (random() * 1.5 - 0.25) * width,
       y: (random() * 1.3 - 0.15) * height,
       color: Math.floor(random() * COLORS.length),
-      radius: 1 + random() * 1.8,
+      radius: 1.4 + random() * 2.2,
       phase: random() * 6.28,
       speed: 0.3 + random() * 0.6,
       alpha: 0.14 + random() * 0.2,
@@ -265,6 +265,7 @@ export default function ConstellationCanvas({ variant = "face", className = "" }
       const time = now / 1000;
       const scale = canvas.width / width;
       const glow = variant === "glow";
+      const glowIntensity = className.includes("glow-bright") ? 1.12 : CONSTELLATION_TUNING.glow;
       const sweep = (time * 0.35 * CONSTELLATION_TUNING.speed) % 1.6 - 0.3;
       const drift = CONSTELLATION_TUNING.pointDrift;
       const ambientDrift = CONSTELLATION_TUNING.ambientDrift;
@@ -281,7 +282,7 @@ export default function ConstellationCanvas({ variant = "face", className = "" }
         context.strokeStyle = COLORS[color];
         context.shadowColor = COLORS[color];
         context.shadowBlur = glow ? CONSTELLATION_TUNING.glowBlur : 0;
-        context.globalAlpha = glow ? CONSTELLATION_TUNING.glow : 0.78;
+        context.globalAlpha = glow ? glowIntensity : 0.82;
 
         for (const point of points) {
           if (point.color !== color) continue;

@@ -378,3 +378,22 @@ em { color: var(--gold); font-style: normal; }
   .page-hero { padding-top: 78px; padding-bottom: 62px; }
   .blog-hero { padding-bottom: 64px; }
 }
+
+/* Alternância orgânica: tecnologia de partículas revelando uma mulher real. */
+.visual-cycle { position: relative; width: 100%; height: 100%; }
+.visual-cycle-constellation, .visual-cycle-woman { position: absolute; inset: 0; width: 100%; height: 100%; }
+.visual-cycle-constellation { animation: cycle-constellation 18s ease-in-out infinite; }
+.visual-cycle-woman { object-fit: cover; object-position: center; opacity: 0; mix-blend-mode: screen; -webkit-mask-image: radial-gradient(ellipse at center, #000 34%, rgba(0,0,0,.9) 58%, transparent 83%); mask-image: radial-gradient(ellipse at center, #000 34%, rgba(0,0,0,.9) 58%, transparent 83%); animation: cycle-woman 18s ease-in-out infinite; }
+.statement-visual-cycle { position: relative; width: min(440px, 78vw); height: 360px; margin: 0 auto -36px; }
+.statement-visual-cycle .statement-constellation, .statement-woman-cycle { position: absolute; inset: 0; width: 100%; height: 100%; }
+.statement-visual-cycle .statement-constellation { margin: 0; width: 100%; opacity: 1; animation: cycle-constellation 18s ease-in-out infinite; }
+.statement-woman-cycle { object-fit: cover; object-position: center; opacity: 0; mix-blend-mode: screen; -webkit-mask-image: radial-gradient(ellipse at center, #000 20%, rgba(0,0,0,.9) 55%, transparent 82%); mask-image: radial-gradient(ellipse at center, #000 20%, rgba(0,0,0,.9) 55%, transparent 82%); animation: cycle-woman 18s ease-in-out infinite; }
+@keyframes cycle-constellation { 0%, 36% { opacity: 1; } 46%, 58% { opacity: 0; } 68%, 100% { opacity: 1; } }
+@keyframes cycle-woman { 0%, 36% { opacity: 0; } 46%, 58% { opacity: .96; } 68%, 100% { opacity: 0; } }
+.syringe-visual-label { display: block; margin-top: -30px; color: var(--silver); text-align: center; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; }
+.statement-constellation .constellation-canvas { filter: drop-shadow(0 0 20px rgba(255,255,255,.58)) drop-shadow(0 0 34px rgba(128,82,255,.36)); }
+@media (max-width: 800px) {
+  .visual-cycle-woman { object-position: center top; }
+  .statement-visual-cycle { height: 300px; width: 100%; }
+  .syringe-visual-label { margin-top: -18px; }
+}
