@@ -23,7 +23,6 @@ export const facialProcedures: Procedure[] = [
   { title: "Linha Mandibular", description: "Defina o contorno do rosto e desenhe uma linha mandibular marcada com tecnologias avançadas. Resultado natural, sem cirurgia, com lifting e firmeza." },
   { title: "Tratamento para Acne", description: "Controle a acne ativa e elimine marcas e cicatrizes com protocolos personalizados. Pele renovada, lisa e saudável." },
   { title: "Preenchimento Facial", description: "Recupere volume, sustentação e harmonia do rosto com preenchedores de última geração e resultados naturais." },
-  { title: "Preenchimento Labial", description: "Realce o contorno e o volume dos lábios com ácido hialurônico de alta qualidade e resultado natural." },
   { title: "Manchas", description: "Trate melasma, manchas solares e marcas de acne com laser de alta precisão e protocolos personalizados." },
   { title: "Papada", description: "Defina o contorno do queixo e reduza a papada sem cirurgia, com indicação personalizada." },
   { title: "Bigode Chinês", description: "Suavize os sulcos nasogenianos e devolva a harmonia ao rosto com resultados naturais e sem cirurgia." },
