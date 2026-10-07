@@ -464,11 +464,11 @@ em { color: var(--gold); font-style: normal; }
 
 
 /* Seringa do hero de Serviços em escala mais discreta. */
-.services-hero .page-hero-constellation { width: min(40vw, 480px); right: 5vw; top: 8%; }
+.services-hero .page-hero-constellation { width: min(48vw, 560px); left: 50%; right: auto; top: 2%; transform: translateX(-50%); }
 .services-hero .page-hero-constellation .constellation-canvas { transform: scale(.82); transform-origin: center; }
 @media (max-width: 800px) {
-  .services-hero .page-hero-constellation { width: 78vw; right: -18vw; top: 28%; }
-  .services-hero .page-hero-constellation .constellation-canvas { transform: scale(.78); }
+  .services-hero .page-hero-constellation { width: 92vw; left: 50%; right: auto; top: 31%; transform: translateX(-50%); opacity: .78; }
+  .services-hero .page-hero-constellation .constellation-canvas { transform: scale(.74); }
 }
 
 

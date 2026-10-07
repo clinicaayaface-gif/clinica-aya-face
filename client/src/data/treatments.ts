@@ -40,7 +40,7 @@ export const bodyProcedures: Procedure[] = [
   { title: "Estrias", description: "Atenue estrias vermelhas e brancas com tecnologias de renovação celular e recuperação da textura da pele." },
   { title: "Gordura Localizada", description: "Tratamentos não invasivos para abdômen, flancos, coxas, braços, costas e glúteos." },
   { title: "Flacidez", description: "Tratamentos não invasivos para a flacidez do corpo com ultrassom, Uthera e bioestimuladores de colágeno." },
-  { title: "Enzimas", description: "Injeções que quebram células de gordura e ajudam a modelar o corpo de forma não invasiva.", duration: "20 a 30 minutos", protocol: "4 a 8 sessões, a cada 7 a 15 dias", benefits: ["Quebra de células de gordura", "Modelagem não invasiva", "Suavização da pele"] },
+  { title: "Enzimas", description: "Injeções que quebram células de gordura e ajudam a modelar o corpo de forma não invasiva." },
 ];
 
 export const technologyCatalog: Technology[] = [

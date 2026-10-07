@@ -99,4 +99,36 @@ Se você está pesquisando Ultraformer ou Uthera em Jundiaí, leve essa lista de
     status: "published" as const,
     publishedAt: new Date("2026-10-06T22:20:00Z"),
   },
+  {
+    title: "Preenchimento facial: indicações, cuidados e segurança",
+    slug: "preenchimento-facial-indicacoes-cuidados-e-seguranca",
+    excerpt: "Entenda as indicações, marcas, cuidados e critérios de segurança do preenchimento facial antes de decidir em Jundiaí.",
+    content: `## O que vale saber antes de decidir
+
+O preenchimento facial é um procedimento que pode devolver volume, melhorar contornos e apoiar a harmonia do rosto. A indicação não deve partir apenas de uma tendência ou de uma foto de referência: é preciso avaliar anatomia, qualidade da pele, histórico de saúde, expectativas e o que combina com cada pessoa.
+
+Entre as principais marcas do mercado estão Rennova, Restylaine e Milimetric. A escolha do produto depende da área, da densidade, da indicação e da avaliação profissional. Antes da aplicação, confirme a procedência, a validade, o lote e o registro aplicável do produto.
+
+## Como o preenchimento funciona e quais objetivos pode atender
+
+O ácido hialurônico é aplicado em pontos planejados para recuperar volume, melhorar sustentação, definir contornos, suavizar sulcos, harmonizar proporções e, em alguns casos, melhorar a hidratação e a qualidade visual da pele. O objetivo não é criar um rosto padrão, mas respeitar a estrutura individual e buscar um resultado natural.
+
+## Como planejamos a aplicação e os cuidados
+
+Na Aya Face, o planejamento começa com uma conversa e uma avaliação presencial. Consideramos assimetrias, movimentos, proporções, histórico de procedimentos, medicamentos, alergias e contraindicações. A aplicação deve ser realizada por profissional habilitado, com produto identificado, técnica adequada, biossegurança e orientação de acompanhamento.
+
+Após o procedimento, podem ocorrer inchaço, vermelhidão e sensibilidade temporários. Siga as orientações recebidas e procure atendimento imediatamente se surgirem dor intensa ou progressiva, alteração de cor da pele, alteração visual, falta de ar ou qualquer sintoma inesperado. Este artigo é educativo e não substitui avaliação individual.
+
+## Preço e duração dependem da avaliação individual
+
+O preço depende da região tratada, do produto, da quantidade necessária, da complexidade do plano e do acompanhamento. A duração dos resultados também varia conforme a área, o produto, o metabolismo e os hábitos de cada pessoa. Por isso, não existe um valor ou prazo único que sirva para todos os casos.
+
+## Home care e integração com nossas tecnologias
+
+A potencialização dos resultados pode envolver cuidados home care escolhidos para a necessidade da pele, como limpeza, hidratação, fotoproteção e ativos orientados pela equipe. Quando fizer sentido, o plano também pode integrar tecnologias da Aya Face, como Uthera, Ultraformer, Lavieen e outras soluções, respeitando o intervalo, a indicação e a segurança de cada etapa. O protocolo é construído de forma individual, sem promessas padronizadas.`,
+    coverImage: "/assets/procedure-bioestimulador.png",
+    category: "Preenchimento · Segurança",
+    status: "published" as const,
+    publishedAt: new Date("2026-10-07T12:00:00Z"),
+  },
 ] as const;
