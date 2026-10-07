@@ -6,6 +6,7 @@ import { registerOAuthRoutes } from "./oauth";
 import { publicPlatformScript } from "./publicConfig";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
+import { ensureBlogSeed } from "../db";
 import { serveStatic, setupVite } from "./vite";
 
 async function startServer() {
@@ -19,6 +20,7 @@ async function startServer() {
     res.set("Cache-Control", "no-store").type("application/javascript").send(publicPlatformScript());
   });
   registerOAuthRoutes(app);
+  await ensureBlogSeed();
   // tRPC API
   app.use(
     "/api/trpc",

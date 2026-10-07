@@ -441,3 +441,9 @@ em { color: var(--gold); font-style: normal; }
   .location-map, .location-map iframe { min-height: 240px; height: 240px; }
   .section-pad { padding-top: 48px; padding-bottom: 48px; }
 }
+
+
+/* Segunda constelação: a mesma formação progressiva da primeira, com rosto em escala equivalente. */
+.statement-woman-cycle { transform: scale(2.1); object-position: center 8%; }
+.statement-constellation .constellation-canvas { width: 100%; height: 100%; }
+.location-map iframe { filter: none; }

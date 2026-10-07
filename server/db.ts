@@ -2,6 +2,7 @@ import { and, desc, eq, lte, or } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/mysql2";
 import { blogPosts, InsertLead, InsertUser, leads, users } from "../drizzle/schema";
 import { ENV } from "./_core/env";
+import { blogSeedPosts } from "./blogSeed";
 
 let _db: ReturnType<typeof drizzle> | null = null;
 
@@ -114,4 +115,20 @@ export async function removePost(id: number) {
   const db = await getDb();
   if (!db) throw new Error("Database is not available");
   await db.delete(blogPosts).where(eq(blogPosts.id, id));
+}
+
+
+export async function ensureBlogSeed() {
+  const db = await getDb();
+  if (!db) return;
+  try {
+    for (const post of blogSeedPosts) {
+      const existing = await db.select({ id: blogPosts.id }).from(blogPosts).where(eq(blogPosts.slug, post.slug)).limit(1);
+      if (!existing.length) {
+        await db.insert(blogPosts).values(post);
+      }
+    }
+  } catch (error) {
+    console.warn("[Blog] Seed skipped:", error);
+  }
 }

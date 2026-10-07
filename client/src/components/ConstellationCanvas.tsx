@@ -276,7 +276,7 @@ export default function ConstellationCanvas({ variant = "face", className = "" }
       const sweep = (time * 0.35 * CONSTELLATION_TUNING.speed) % 1.6 - 0.3;
       const drift = CONSTELLATION_TUNING.pointDrift;
       const ambientDrift = CONSTELLATION_TUNING.ambientDrift;
-      const formationProgress = variant === "face" ? Math.min(1, Math.max(0, (time - formationStart) / 7)) : 1;
+      const formationProgress = (variant === "face" || variant === "glow") ? Math.min(1, Math.max(0, (time - formationStart) / 7)) : 1;
       const formation = formationProgress * formationProgress * (3 - 2 * formationProgress);
 
       context.setTransform(1, 0, 0, 1, 0, 0);
@@ -297,8 +297,8 @@ export default function ConstellationCanvas({ variant = "face", className = "" }
           if (point.color !== color) continue;
           const depth = point.ambient ? 20 : 10;
           const amplitude = point.ambient ? ambientDrift : drift;
-          const formedX = variant === "face" ? point.scatterX + (point.x - point.scatterX) * formation : point.x;
-          const formedY = variant === "face" ? point.scatterY + (point.y - point.scatterY) * formation : point.y;
+          const formedX = (variant === "face" || variant === "glow") ? point.scatterX + (point.x - point.scatterX) * formation : point.x;
+          const formedY = (variant === "face" || variant === "glow") ? point.scatterY + (point.y - point.scatterY) * formation : point.y;
           const x = formedX + Math.sin(time * point.speed * CONSTELLATION_TUNING.speed * motionFactor + point.phase) * amplitude + Math.cos(time * 0.17 + point.phase) * 1.5 + pointerX * depth;
           const y = formedY + Math.cos(time * point.speed * 0.9 * CONSTELLATION_TUNING.speed * motionFactor + point.phase) * amplitude + Math.sin(time * 0.13 + point.phase) * 1.5 + pointerY * depth;
           let radius = point.radius * (1 + 0.16 * Math.sin(time * point.speed * 1.6 * motionFactor + point.phase));

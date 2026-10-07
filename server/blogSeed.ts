@@ -1,0 +1,102 @@
+export const blogSeedPosts = [
+  {
+    title: "O que é botox e como ele pode suavizar suas expressões",
+    slug: "o-que-e-botox-e-como-ele-pode-suavizar-suas-expressoes",
+    excerpt: "Entenda como a toxina botulínica atua nas linhas de expressão, quais cuidados considerar e como buscar uma aplicação segura em Jundiaí.",
+    content: `Botox é o nome popular pelo qual muitas pessoas conhecem a toxina botulínica. Em formulação purificada e diluída, aplicada em pequenas quantidades no músculo-alvo, ela bloqueia temporariamente alguns sinais nervosos e reduz a contração muscular local. Na estética, esse mecanismo pode suavizar linhas dinâmicas, aquelas que aparecem ou ficam mais marcadas com o movimento do rosto.
+
+As regiões mais procuradas incluem linhas entre as sobrancelhas, linhas horizontais da testa e os chamados pés de galinha. A indicação, porém, não deve ser feita apenas pela fotografia ou por uma lista de áreas. Uma avaliação individual considera a anatomia, a força muscular, a qualidade da pele, o histórico de procedimentos e o resultado que a pessoa deseja preservar.
+
+Suavizar expressões não significa apagar a identidade do rosto. A técnica bem planejada procura equilibrar movimento, proporção e naturalidade. Alguns músculos são importantes para a expressão e para funções do dia a dia; por isso, dose, pontos, produto e intervalo entre aplicações precisam ser definidos por profissional legalmente habilitado, sem receitas prontas.
+
+O efeito não é permanente. Fontes de saúde e bulas de produtos descrevem início em alguns dias e duração aproximada de três a seis meses, com variações conforme produto, região, dose e características individuais. Esse período não é uma promessa: somente o profissional responsável pode orientar o que é esperado para cada caso.
+
+Antes de realizar botox em Jundiaí, confirme se o produto é registrado, está dentro da validade e tem marca e lote identificáveis. A Anvisa recomenda aplicação por profissional habilitado em serviço autorizado pela Vigilância Sanitária. Também é importante informar doenças, medicamentos, alergias, aplicações anteriores, gravidez ou amamentação, para que os riscos sejam avaliados adequadamente.
+
+Dor, vermelhidão, inchaço ou hematoma podem ocorrer no local. Sintomas como visão borrada, pálpebras caídas, fraqueza generalizada, dificuldade para falar, engolir ou respirar exigem contato médico imediato ou ida ao pronto-socorro. Este texto é educativo e não substitui consulta, diagnóstico ou indicação personalizada. Na Aya Face, a conversa inicial ajuda a entender se a toxina botulínica faz sentido para o seu momento e para a sua expressão natural.`,
+    coverImage: "/assets/aya-treatment.jpg",
+    category: "Botox · Jundiaí",
+    status: "published" as const,
+    publishedAt: new Date("2026-10-06T22:00:00Z"),
+  },
+  {
+    title: "Quanto custa o botox e como avaliar preços e ofertas",
+    slug: "quanto-custa-o-botox-e-como-avaliar-precos-e-ofertas",
+    excerpt: "Preço de botox não é tudo: veja o que comparar em uma oferta, como conferir produto, profissional e segurança em Jundiaí.",
+    content: `Quanto custa o botox? Essa é uma das perguntas mais buscadas por quem procura toxina botulínica em Jundiaí, mas não existe um preço único ou uma tabela nacional capaz de representar todos os atendimentos. O orçamento depende das áreas avaliadas, do produto regularizado, da quantidade necessária, da experiência do profissional, da estrutura do serviço e do acompanhamento oferecido.
+
+Uma oferta com preço muito baixo pode parecer atraente, mas o valor isolado não permite comparar serviços equivalentes. Antes de decidir, peça por escrito quais regiões serão tratadas, qual marca e apresentação do produto serão utilizadas, quem é o profissional responsável, se consulta, aplicação e retorno estão incluídos e como funciona eventual revisão. Transparência é parte importante da segurança.
+
+Também é importante não comparar somente o preço por unidade. As unidades são próprias de cada preparação e não são automaticamente intercambiáveis entre marcas. Por isso, uma quantidade anunciada em uma promoção não deve ser comparada como se tivesse a mesma equivalência de outra marca. O orçamento mais útil é aquele que explica o planejamento e o que está, de fato, incluído.
+
+A Anvisa orienta utilizar medicamento registrado, dentro do prazo de validade, aplicado por profissional habilitado e em serviço autorizado pela Vigilância Sanitária. O paciente pode pedir para conferir rótulo, fabricante, lote e validade e perguntar como essas informações serão registradas no prontuário. Em Jundiaí e região, também vale confirmar a regularidade sanitária do estabelecimento antes do procedimento.
+
+Preço de botox em Jundiaí pode variar entre clínicas e ao longo do tempo. Anúncios e promoções mudam e não são evidência independente de qualidade ou resultado. Uma avaliação é o caminho para compreender se o procedimento é indicado, quais áreas fazem sentido e qual orçamento corresponde ao seu caso, sem prescrever dose ou prometer duração.
+
+A escolha segura considera informação, rastreabilidade, qualificação e acompanhamento. Se depois da aplicação surgirem visão borrada, pálpebras caídas, fala arrastada ou dificuldade para engolir ou respirar, procure atendimento médico imediatamente. Na Aya Face, explicamos o protocolo e os cuidados antes de qualquer decisão, para que você compare propostas com mais clareza e tranquilidade.`,
+    coverImage: "/assets/aya-editorial.jpg",
+    category: "Botox · Segurança",
+    status: "published" as const,
+    publishedAt: new Date("2026-10-06T22:05:00Z"),
+  },
+  {
+    title: "Quanto custa botox no rosto",
+    slug: "quanto-custa-botox-no-rosto",
+    excerpt: "Saiba por que o valor do botox facial depende das áreas e do planejamento e como solicitar um orçamento responsável em Jundiaí.",
+    content: `Quanto custa botox no rosto? O valor não pode ser definido de forma responsável apenas pelo nome do procedimento. O rosto pode envolver testa, região entre as sobrancelhas, pés de galinha e outras áreas, cada uma com anatomia, movimento e necessidade de planejamento diferentes. O orçamento deve vir depois de uma avaliação, e não substituir a avaliação.
+
+Para comparar valores de botox facial em Jundiaí, peça uma descrição clara das áreas previstas, do produto e da apresentação, da quantidade de unidades, da consulta, da aplicação e de eventuais retornos. Pergunte também quem fará o procedimento e em qual serviço ele será realizado. Assim, você evita comparar uma aplicação completa com uma oferta que cobre somente uma pequena área.
+
+O número de unidades não deve ser usado como uma medida universal entre marcas. A bula oficial de cada produto orienta sua própria preparação, e unidades de diferentes marcas não são automaticamente equivalentes. Por isso, uma clínica transparente informa marca, lote, validade e planejamento sem transformar uma promoção em promessa de resultado.
+
+A toxina botulínica atua principalmente sobre rugas dinâmicas, relacionadas ao movimento muscular. Fontes da Sociedade Brasileira de Dermatologia descrevem início de efeito em torno de alguns dias, resultado mais evidente aproximadamente em duas semanas e duração que pode variar, frequentemente entre quatro e seis meses. São referências educativas, não garantia para todas as pessoas.
+
+Em Jundiaí, segurança também envolve verificar se o produto é registrado, se o estabelecimento está regularizado e se o profissional é habilitado para a atividade realizada. Histórico de saúde, medicamentos, alergias, infecção no local, gravidez, amamentação e doenças neuromusculares precisam ser discutidos em consulta. Não existe um cálculo online que substitua essa avaliação.
+
+O melhor preço é aquele que vem acompanhado de informação e responsabilidade, não necessariamente o menor anúncio. Se você está pesquisando botox no rosto em Jundiaí, converse com a Aya Face para entender as possibilidades, os limites e o investimento do seu protocolo antes de tomar uma decisão. Este conteúdo é educativo e não substitui orientação médica individualizada.`,
+    coverImage: "/assets/aya-treatment.jpg",
+    category: "Botox · Preços",
+    status: "published" as const,
+    publishedAt: new Date("2026-10-06T22:10:00Z"),
+  },
+  {
+    title: "Quem pode aplicar botox e como escolher o profissional",
+    slug: "quem-pode-aplicar-botox-e-como-escolher-o-profissional",
+    excerpt: "Veja como investigar habilitação, produto, clínica e licença sanitária antes de fazer toxina botulínica em Jundiaí e região.",
+    content: `Quem pode aplicar botox? A resposta exige cuidado, porque a atuação depende da formação, do conselho profissional, da legislação vigente, do tipo de procedimento e da regularidade do serviço. A Anvisa orienta que medicamentos sejam aplicados por profissional de saúde habilitado e em serviço autorizado pela Vigilância Sanitária. Um curso livre ou uma promessa em rede social não comprova essa habilitação.
+
+Ao escolher o profissional para botox em Jundiaí, procure informações verificáveis. Para médicos, confira CRM e especialidade nos canais oficiais e observe se há RQE quando o profissional se anuncia como especialista. Para outras categorias, verifique o conselho correspondente e o escopo legal da atuação. Como normas podem mudar, a clínica e o profissional devem esclarecer qual habilitação sustenta o procedimento oferecido.
+
+Pergunte qual produto será utilizado, confira marca, fabricante, lote e validade e verifique como essas informações serão registradas. A rastreabilidade ajuda a identificar o que foi aplicado e a acompanhar o histórico de procedimentos. A clínica também deve explicar indicação, alternativas, riscos, cuidados antes e depois e como será o acompanhamento.
+
+Uma boa consulta não começa com uma dose pronta. Ela considera movimentos faciais, proporções, assimetrias, histórico de aplicações, medicamentos, alergias e condições de saúde. O objetivo não é aplicar o máximo, mas construir um plano coerente com a anatomia e com a naturalidade que a pessoa deseja manter.
+
+Em Jundiaí, confirme se o estabelecimento possui licença sanitária válida para o serviço. A licença não garante resultado, mas é um critério básico de funcionamento regular. Desconfie de pressão para decidir imediatamente, produto sem identificação, promessa de resultado garantido, ausência de prontuário ou preços muito abaixo sem explicação.
+
+Depois da aplicação, alterações como visão dupla ou borrada, pálpebras caídas, fraqueza generalizada, fala alterada ou dificuldade para engolir e respirar precisam de atendimento médico imediato. Este artigo é um guia educativo, não uma autorização ou recomendação para qualquer pessoa. A decisão deve ocorrer após avaliação presencial, consentimento informado e confirmação de que o profissional e o serviço estão legalmente habilitados.`,
+    coverImage: "/assets/aya-editorial.jpg",
+    category: "Botox · Profissional",
+    status: "published" as const,
+    publishedAt: new Date("2026-10-06T22:15:00Z"),
+  },
+  {
+    title: "Qual a diferença do Ultraformer e o Utera",
+    slug: "qual-a-diferenca-do-ultraformer-e-o-utera",
+    excerpt: "Entenda o que pode ser comparado entre Ultraformer e Utera, por que confirmar a tecnologia e como escolher com segurança em Jundiaí.",
+    content: `Qual a diferença do Ultraformer e o Utera? Antes de comparar resultados ou preços, é importante confirmar exatamente qual aparelho e qual fabricante estão sendo mencionados. Ultraformer é uma plataforma da Classys associada ao ultrassom micro e macrofocado, com diferentes modelos e cartuchos. Já o nome Utera aparece em comunicações profissionais, mas pode não identificar uma única plataforma, modelo ou ficha técnica pública.
+
+Por isso, “Utera” pode ser uma forma comercial, uma grafia diferente ou uma confusão com Ulthera/Ultherapy, que é outra marca. Não é seguro atribuir automaticamente ao Utera as especificações do Ultraformer, nem afirmar que os aparelhos são iguais ou que um é universalmente melhor. A clínica deve informar marca, modelo, fabricante, parâmetros e regularidade aplicável antes do tratamento.
+
+O Ultraformer III é descrito pelo fabricante como uma plataforma de ultrassom micro e macrofocado, com cartuchos destinados a diferentes profundidades e aplicações faciais ou corporais. O Ultraformer MPT apresenta outras modalidades e cartuchos. Esses dados ajudam a entender o equipamento, mas não são promessa de resultado individual nem substituem avaliação da anatomia e do objetivo.
+
+A escolha do ultrassom microfocado em Jundiaí deve considerar área, profundidade, indicação, parâmetros, treinamento do operador e segurança. A Sociedade Brasileira de Dermatologia recomenda capacitação específica e protocolos rigorosos, além de alertar para regiões que não devem receber a aplicação, como o globo ocular e a tireoide. A consulta é indispensável para avaliar contraindicações e alternativas.
+
+Ao pedir um orçamento, não pergunte somente quantas linhas ou disparos serão feitos. Solicite o nome completo do equipamento, modelo, fabricante, registro ou regularidade, área tratada, profissional responsável, cuidados e acompanhamento. A disponibilidade de uma tecnologia em um anúncio local não comprova seu registro, desempenho ou adequação ao seu caso.
+
+Se você está pesquisando Ultraformer ou Utera em Jundiaí, leve essa lista de perguntas para a avaliação na Aya Face. O protocolo deve ser escolhido com base em informação verificável, não apenas em um nome comercial. Este artigo é educativo e não substitui diagnóstico, indicação ou orientação individual de profissional habilitado.`,
+    coverImage: "/assets/aya-editorial.jpg",
+    category: "Tecnologias · Jundiaí",
+    status: "published" as const,
+    publishedAt: new Date("2026-10-06T22:20:00Z"),
+  },
+] as const;

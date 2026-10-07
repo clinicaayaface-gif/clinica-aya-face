@@ -4,11 +4,9 @@ import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { adminProcedure, publicProcedure, router } from "./_core/trpc";
 import { createLead, getPostBySlug, listAllPosts, listLeads, listPublishedPosts, removePost, savePost } from "./db";
+import { blogSeedPosts } from "./blogSeed";
 
-const fallbackPosts = [
-  { id: 1, title: "Como escolher o protocolo ideal para sua pele", slug: "como-escolher-o-protocolo-ideal", excerpt: "Uma boa avaliação transforma dúvidas em um plano de cuidado possível, seguro e personalizado.", content: "Cada pele tem uma história. Na avaliação, observamos textura, sensibilidade, rotina e objetivos para construir um protocolo que respeite o seu tempo e a sua individualidade.\n\nTecnologia é ferramenta: o cuidado começa na escuta.", coverImage: "/assets/aya-editorial.jpg", category: "Cuidado", status: "published", publishedAt: new Date("2026-09-20T10:00:00Z") },
-  { id: 2, title: "Tecnologia e naturalidade podem caminhar juntas", slug: "tecnologia-e-naturalidade", excerpt: "Conheça a lógica por trás de tratamentos que valorizam resultados progressivos e elegantes.", content: "Na estética avançada, o resultado mais bonito é aquele que parece seu. Protocolos progressivos, tecnologia adequada e acompanhamento próximo ajudam a preservar a naturalidade.", coverImage: "/assets/aya-treatment.jpg", category: "Tecnologia", status: "published", publishedAt: new Date("2026-09-12T10:00:00Z") },
-] as const;
+const fallbackPosts = blogSeedPosts;
 
 const postInput = z.object({
   id: z.number().optional(),
