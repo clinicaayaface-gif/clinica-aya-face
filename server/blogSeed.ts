@@ -131,4 +131,68 @@ A potencialização dos resultados pode envolver cuidados home care escolhidos p
     status: "published" as const,
     publishedAt: new Date("2026-10-07T12:00:00Z"),
   },
+  {
+    title: "Preenchimento labial: naturalidade, cuidados e segurança",
+    slug: "preenchimento-labial-indicacoes-cuidados-e-seguranca",
+    excerpt: "Entenda indicações, planejamento, marcas, cuidados e segurança do preenchimento labial antes de decidir em Jundiaí.",
+    content: `## O que vale saber antes de decidir
+
+O preenchimento labial pode melhorar contorno, proporção, hidratação e volume dos lábios, sempre respeitando os traços individuais. A indicação começa com uma avaliação: formato, assimetrias, movimento, qualidade da pele, histórico de procedimentos e expectativa precisam ser considerados antes de qualquer aplicação.
+
+Entre as marcas encontradas no mercado estão Rennova, Restylaine e Milimetric. A escolha depende da indicação, da região, da densidade do produto e do planejamento profissional. Confirme procedência, lote, validade e registro aplicável antes do procedimento.
+
+## Como funciona e quais objetivos pode atender
+
+O ácido hialurônico é aplicado em pontos planejados para definir o contorno, equilibrar assimetrias, apoiar a proporção entre lábio superior e inferior e, quando indicado, devolver volume e hidratação. Naturalidade não significa um resultado único: significa respeitar o rosto e evitar excessos.
+
+## Como planejamos a aplicação e os cuidados
+
+Na Aya Face, a aplicação é planejada após conversa e avaliação presencial, com técnica, biossegurança, produto identificado e profissional habilitado. Inchaço, vermelhidão e sensibilidade podem ocorrer temporariamente. Siga as orientações recebidas e procure atendimento imediato diante de dor intensa, alteração de cor, alteração visual ou outro sintoma inesperado.
+
+## Preço e duração dependem da avaliação individual
+
+O preço e a duração dependem do produto, da quantidade, do objetivo, da anatomia e do acompanhamento. Não existe uma quantidade ou um valor único para todos os lábios. Uma avaliação permite montar um plano responsável e explicar limites, alternativas e cuidados.
+
+## Home care e integração com tecnologias
+
+Cuidados home care, hidratação, fotoproteção e ativos orientados podem apoiar a qualidade da pele. Quando fizer sentido, o protocolo pode ser integrado a tecnologias da Aya Face, respeitando intervalos e indicações. O objetivo é cuidar do conjunto, não apenas de uma região. Este artigo é educativo e não substitui avaliação individual.`,
+    coverImage: "/assets/illustration-facial-contour.jpg",
+    category: "Preenchimento · Cuidados",
+    status: "published" as const,
+    publishedAt: new Date("2026-10-08T19:00:00Z"),
+  },
+  {
+    title: "Ultraformer 3, MPT e Uthera: diferenças, indicações e segurança",
+    slug: "ultraformer-3-mpt-e-uthera-diferencas-indicacoes-e-seguranca",
+    excerpt: "Entenda o que diferencia Ultraformer 3, Ultraformer MPT e Uthera e por que a escolha depende da avaliação individual.",
+    content: `## O que vale saber antes de decidir
+
+Ultraformer 3, Ultraformer MPT e Uthera são nomes que podem aparecer em pesquisas sobre ultrassom focado para flacidez, contorno e estímulo de colágeno. Antes de comparar preços ou promessas, é essencial confirmar o equipamento, o modelo, o fabricante, os cartuchos e a qualificação do profissional que realizará o protocolo.
+
+Os nomes não devem ser tratados como sinônimos. O Ultraformer 3 é uma plataforma associada ao ultrassom micro e macrofocado. O MPT identifica uma modalidade e uma geração de tecnologia da linha Ultraformer, com recursos e cartuchos próprios. Uthera é o nome utilizado pela Aya Face para sua tecnologia de ultrassom focado. A indicação e os parâmetros precisam ser explicados na avaliação.
+
+## Como cada tecnologia pode ser considerada
+
+O Ultraformer 3 pode ser indicado para diferentes profundidades e regiões, conforme cartucho, área e objetivo. O Ultraformer MPT combina recursos específicos da plataforma para protocolos faciais e corporais, sem significar que todos os casos terão a mesma indicação. O Uthera também deve ser planejado conforme flacidez, contorno, espessura dos tecidos, sensibilidade e expectativa.
+
+Nenhuma tecnologia é universalmente melhor. O resultado depende da anatomia, do diagnóstico estético, dos parâmetros, da técnica, do intervalo entre sessões e da resposta individual. Uma consulta responsável evita escolher o aparelho apenas por uma fotografia ou por uma oferta.
+
+## Como planejamos o protocolo e os cuidados
+
+Na Aya Face, a escolha considera região, profundidade, objetivo, histórico de procedimentos, condições de saúde e contraindicações. A equipe deve apresentar o equipamento utilizado, explicar o que pode ser esperado e orientar os cuidados antes e depois. O procedimento deve ser realizado com biossegurança e por profissional habilitado para a atividade.
+
+Podem ocorrer vermelhidão, sensibilidade, edema ou desconforto temporário. Em caso de dor intensa, alteração visual, queimadura, fraqueza ou qualquer sintoma inesperado, procure avaliação profissional. Este artigo é educativo e não substitui consulta, diagnóstico ou indicação individual.
+
+## Preço, duração e número de sessões
+
+O preço depende da área, do equipamento, dos cartuchos, dos parâmetros, da quantidade de disparos ou linhas, da complexidade e do acompanhamento. Por isso, não existe um preço único para Ultraformer 3, MPT ou Uthera. A duração dos resultados também varia conforme idade, flacidez, hábitos, metabolismo e resposta do organismo.
+
+## Integração com home care e outras tecnologias
+
+Um protocolo pode ser integrado a home care, fotoproteção, hidratação e ativos orientados para a necessidade da pele. Quando fizer sentido, tecnologias como Lavieen, Ultraformer, Uthera e bioestimuladores podem ser organizadas em etapas, respeitando indicações, intervalos e segurança. O objetivo é construir um plano coerente, sem prometer resultados padronizados.`,
+    coverImage: "/assets/procedure-uthera.png",
+    category: "Tecnologias · Segurança",
+    status: "published" as const,
+    publishedAt: new Date("2026-10-08T20:00:00Z"),
+  },
 ] as const;
