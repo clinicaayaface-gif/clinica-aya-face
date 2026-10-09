@@ -195,4 +195,38 @@ Um protocolo pode ser integrado a home care, fotoproteção, hidratação e ativ
     status: "published" as const,
     publishedAt: new Date("2026-10-08T20:00:00Z"),
   },
+  {
+    title: "Cuidados com bioestimuladores de colágeno: segurança e planejamento",
+    slug: "cuidados-com-bioestimuladores-de-colageno-seguranca-e-planejamento",
+    excerpt: "Saiba como funcionam os bioestimuladores de colágeno, quais cuidados considerar e por que a avaliação individual é essencial.",
+    content: `## O que vale saber antes de decidir
+
+Bioestimuladores de colágeno são produtos injetáveis planejados para estimular gradualmente a produção de colágeno e melhorar firmeza, qualidade e sustentação da pele. Eles não funcionam como um preenchimento imediato e não devem ser escolhidos apenas por uma fotografia ou por uma promessa de resultado.
+
+A indicação depende de idade, flacidez, qualidade da pele, região, histórico de procedimentos, condições de saúde e expectativa. Produtos diferentes têm características, bulas e indicações próprias. Antes de decidir, confirme qual produto será utilizado, sua procedência, validade, lote e o profissional responsável.
+
+## Como é o planejamento
+
+Na Aya Face, o protocolo começa com avaliação presencial e conversa sobre objetivos. A equipe analisa anatomia, espessura e qualidade da pele, simetrias, medicamentos, alergias e contraindicações. A quantidade, os pontos, o intervalo entre sessões e a necessidade de reavaliação são definidos individualmente.
+
+O procedimento deve ser realizado por profissional habilitado, em ambiente adequado e com registro do produto utilizado. Não existe uma quantidade universal de aplicações, nem um resultado igual para todos os rostos ou corpos.
+
+## Cuidados antes e depois
+
+Informe doenças, alergias, medicamentos, histórico de preenchimentos ou outros procedimentos. Siga as orientações recebidas sobre higiene, atividade física, exposição solar, maquiagem e manipulação da região. Inchaço, vermelhidão, sensibilidade, pequenos hematomas e desconforto podem ocorrer e costumam ser avaliados no acompanhamento.
+
+Não massageie ou pressione a área por conta própria e não use medicamentos ou produtos sem orientação. Procure atendimento imediatamente diante de dor intensa ou progressiva, alteração importante de cor, calor excessivo, secreção, febre, alteração visual, falta de ar ou qualquer sintoma que preocupe.
+
+## Resultados, preço e duração
+
+Os efeitos são progressivos e variam conforme produto, área, técnica, metabolismo e resposta de cada pessoa. O preço depende do produto, quantidade, regiões e plano de acompanhamento. Uma avaliação responsável é mais útil do que comparar apenas valores de anúncios.
+
+## Home care e integração com tecnologias
+
+Fotoproteção, limpeza suave, hidratação e home care orientado podem apoiar a qualidade da pele. Quando fizer sentido, o plano pode integrar bioestimuladores com Uthera, Ultraformer, Lavieen ou outras tecnologias, respeitando indicações, intervalos e segurança. Este artigo é educativo e não substitui consulta, diagnóstico ou indicação individual.`,
+    coverImage: "/assets/procedure-comfort-facial.jpg",
+    category: "Bioestimuladores · Cuidados",
+    status: "published" as const,
+    publishedAt: new Date("2026-10-08T21:30:00Z"),
+  },
 ] as const;
