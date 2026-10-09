@@ -97,37 +97,81 @@ function TechnologyCard({ technology, index }: { technology: Technology; index: 
 
 function MenuPage() {
   const whatsappFor = (name: string) => `https://wa.me/551148634866?text=${encodeURIComponent(`Olá, vim do site e tenho interesse no ${name}.`)}`;
-  const sections: Array<{ eyebrow: string; title: string; description: string; entries: Array<{ name: string; description?: string; values: string[] }> }> = [
-    { eyebrow: "01 · Consulta", title: "Consulta Estratégica Facial", description: "Análise da pele e do envelhecimento com lâmpada de Wood, teste de hidratação e mapa facial digital, com plano personalizado. 100% do valor é convertido em crédito no seu programa.", entries: [{ name: "Consulta Estratégica Facial", values: ["R$ 100"] }] },
+  const sections: Array<{ eyebrow: string; title: string; description: string; visible?: boolean; entries: Array<{ name: string; description?: string; values: string[] }> }> = [
+    { visible: false, eyebrow: "00 · Consulta", title: "Consulta Estratégica Facial", description: "Análise da pele e do envelhecimento com lâmpada de Wood, teste de hidratação e mapa facial digital, com plano personalizado. 100% do valor é convertido em crédito no seu programa.", entries: [{ name: "Consulta Estratégica Facial", values: ["R$ 100"] }] },
+    { eyebrow: "01 · Tratamentos Faciais", title: "Tratamentos Faciais", description: "Cuidados superficiais da pele para higienizar, renovar, iluminar e preparar o rosto para um protocolo personalizado.", entries: [
+      { name: "Limpeza de Pele", description: "Higienização, esfoliação e extração.", values: ["De R$ 250 por R$ 197"] },
+      { name: "Limpeza Coreana Aya", description: "Dupla higienização, esfoliação, extração, ativos coreanos, máscara terapêutica e massagem relaxante.", values: ["De R$ 400 por R$ 297"] },
+      { name: "Aya Micro 4D", description: "Microagulhamento avançado com PDRN ou Exossomos + vitaminas C e peptídeos para rejuvenescimento global.", values: ["Sessão · R$ 490", "Pacote 3 sessões · R$ 1.390"] },
+      { name: "Aya Skin Glow", description: "Laser Lavieen para luminosidade, poros e manchas. 4 sessões em rosto, cabelo, colo ou mãos, com blend nutritivo e clareadores.", values: ["Pacote 4 sessões · R$ 1.250", "Presente: 4 sessões de Hidra Aya"] },
+    ] },
     { eyebrow: "02 · Rejuvenescimento facial", title: "Rejuvenescimento facial", description: "Protocolos pensados para firmeza, contorno, qualidade da pele, prevenção e rejuvenescimento com naturalidade.", entries: [
       { name: "Aya Lift", description: "Ultraformer para sustentação, contorno definido e colágeno profundo. Intervalo mínimo de 4 meses.", values: ["Ultraformer III FullFace · R$ 1.399", "Ultraformer MPT FullFace · R$ 2.399"] },
       { name: "Aya Collagen", description: "Bioestimuladores de colágeno para firmeza e qualidade da pele, associados ao Microagulhamento 4D.", values: ["HarmonyCa · por seringa · R$ 3.290", "Radiesse · R$ 1.750", "Sculptra · R$ 2.490", "Stim · R$ 1.550"] },
       { name: "Aya Tox", description: "Toxina botulínica para suavizar rugas e prevenir o envelhecimento, com resultado natural.", values: ["Terço superior · Botox R$ 990 · Dysport R$ 1.100 · Letybo R$ 890", "FullFace · Botox R$ 1.650 · Dysport R$ 2.299 · Letybo R$ 1.490", "Pescoço · Botox R$ 990 · Dysport R$ 1.100 · Letybo R$ 890"] },
       { name: "Aya Contour", description: "Preenchimento com ácido hialurônico para harmonização e reposição estrutural natural. Valor por ml.", values: ["Rennova · R$ 890", "Restylane · R$ 1.190", "Millimetric · R$ 999"] },
-      { name: "Aya Threads", description: "Fios de PDO para sustentação e bioestimulação de colágeno.", values: ["Sessão · a partir de R$ 990"] },
-      { name: "Aya Micro 4D", description: "Microagulhamento avançado com PDRN, exossomos, vitaminas C e peptídeos para rejuvenescimento global.", values: ["Sessão · R$ 490", "Pacote 3 sessões · R$ 1.390"] },
-      { name: "Aya Skin Glow", description: "Laser Lavieen para luminosidade, poros e manchas. 4 sessões em rosto, cabelo, colo ou mãos, com blend nutritivo e clareadores.", values: ["Pacote 4 sessões · R$ 1.250", "Presente: 4 sessões de Hidra Aya"] },
+      { name: "Aya Threads", description: "Fios de PDO para sustentação e bioestimulação de colágeno.", values: ["Fios de PDO Espiculado (Sustentação / Tração) · 4UN · R$ 1.190", "Fios de PDO Lisos (Estímulo) · 4UN · R$ 990"] },
       { name: "Aya Skin Renewal", description: "Laser CO2 fracionado para rugas, cicatrizes, flacidez e renovação intensa da pele.", values: ["Sessão · R$ 1.490"] },
       { name: "Aya Eyes", description: "Protocolos personalizados para olheiras, bolsas, rugas finas e rejuvenescimento do olhar.", values: ["Sessão · R$ 490", "Pacote 3 sessões · R$ 1.490"] },
-      { name: "Limpeza Coreana Aya", description: "Dupla higienização, esfoliação, extração, ativos coreanos, máscara terapêutica e massagem relaxante.", values: ["Sessão · R$ 197"] },
     ] },
-    { eyebrow: "03 · Depilação", title: "Depilação a laser", description: "Tecnologia de última geração, reconhecida pelo alto conforto e excelente eficácia.", entries: [{ name: "Depilação a laser", values: ["Sessões · a partir de R$ 89"] }] },
-    { eyebrow: "04 · Bem-estar", title: "Massagens e Spa", description: "Momentos de cuidado para aliviar tensões, estimular a circulação e devolver leveza ao corpo.", entries: [{ name: "Massagens e Spa Aya", description: "Drenagem Linfática · Massagem Modeladora · Massagem Relaxante · Protocolos Spa Aya.", values: ["Sessões · a partir de R$ 129"] }] },
-    { eyebrow: "05 · Corpo", title: "Tratamentos corporais", description: "Protocolos para contorno, redução de gordura localizada, firmeza e cuidados corporais.", entries: [
+    { eyebrow: "03 · Bem-estar", title: "Massagens e Spa", description: "Momentos de cuidado para aliviar tensões, estimular a circulação e devolver leveza ao corpo.", entries: [{ name: "Massagens e Spa Aya", description: "Drenagem Linfática · Massagem Modeladora · Massagem Relaxante · Protocolos Spa Aya.", values: ["Sessões · a partir de R$ 129"] }] },
+    { eyebrow: "04 · Corpo", title: "Tratamentos corporais", description: "Protocolos para contorno, redução de gordura localizada, firmeza e cuidados corporais.", entries: [
       { name: "Hidrolipo + Drenagem Linfática", values: ["Por sessão · R$ 249"] },
       { name: "Enzimas para Redução de Gordura Localizada", values: ["Por sessão · R$ 279"] },
       { name: "Enzimas Intramusculares", values: ["Por sessão · R$ 199"] },
       { name: "Criolipólise", values: ["Por área · R$ 590"] },
       { name: "Radiofrequência Corporal", values: ["Por sessão · R$ 250"] },
     ] },
-    { eyebrow: "06 · Firmeza e contorno", title: "Tecnologias para firmeza e contorno", description: "Recursos que podem complementar o plano de cuidado conforme a avaliação individual.", entries: [
+    { eyebrow: "05 · Firmeza e contorno", title: "Tecnologias para firmeza e contorno", description: "Recursos que podem complementar o plano de cuidado conforme a avaliação individual.", entries: [
       { name: "Radiofrequência Facial", values: ["Por sessão · R$ 220"] },
       { name: "Bioestimulador de Glúteos", values: ["A partir de · por seringa · R$ 1.499"] },
       { name: "Preenchimento de Glúteos", values: ["Por ml · R$ 1.800"] },
     ] },
+    { eyebrow: "06 · Depilação", title: "Depilação", description: "Tecnologia de última geração, reconhecida pelo alto conforto e excelente eficácia. Valores por sessão e pacote com 10 sessões e 30% de desconto.", entries: [
+      { name: "Virilha Completa Feminina", values: ["Sessão · R$ 150", "Pacote 10 sessões · R$ 1.050"] },
+      { name: "Axilas Feminina", values: ["Sessão · R$ 80", "Pacote 10 sessões · R$ 560"] },
+      { name: "Buço Feminina", values: ["Sessão · R$ 50", "Pacote 10 sessões · R$ 350"] },
+      { name: "Avaliação Depilação a Laser Feminina", values: ["Sessão · R$ -", "Pacote 10 sessões · R$ -"] },
+      { name: "Braço Feminina", values: ["Sessão · R$ 130", "Pacote 10 sessões · R$ 910"] },
+      { name: "Coxa Feminina", values: ["Sessão · R$ 150", "Pacote 10 sessões · R$ 1.050"] },
+      { name: "Meia Perna Feminina", values: ["Sessão · R$ 130", "Pacote 10 sessões · R$ 910"] },
+      { name: "Mento Feminina", values: ["Sessão · R$ 50", "Pacote 10 sessões · R$ 350"] },
+      { name: "Nádegas Feminina", values: ["Sessão · R$ 140", "Pacote 10 sessões · R$ 980"] },
+      { name: "Rosto Todo Feminina", values: ["Sessão · R$ 150", "Pacote 10 sessões · R$ 1.050"] },
+      { name: "Linha Alba Feminina", values: ["Sessão · R$ 60", "Pacote 10 sessões · R$ 420"] },
+      { name: "Nuca Feminina", values: ["Sessão · R$ 60", "Pacote 10 sessões · R$ 420"] },
+      { name: "Meio Braço Feminina", values: ["Sessão · R$ 100", "Pacote 10 sessões · R$ 700"] },
+      { name: "Pé Feminina", values: ["Sessão · R$ 70", "Pacote 10 sessões · R$ 490"] },
+      { name: "Pescoço Feminina", values: ["Sessão · R$ 90", "Pacote 10 sessões · R$ 630"] },
+      { name: "Auréola Feminina", values: ["Sessão · R$ 70", "Pacote 10 sessões · R$ 490"] },
+      { name: "Costas Feminina", values: ["Sessão · R$ 180", "Pacote 10 sessões · R$ 1.260"] },
+      { name: "Orelha Feminina", values: ["Sessão · R$ 50", "Pacote 10 sessões · R$ 350"] },
+      { name: "Virilha Cavada Feminina", values: ["Sessão · R$ 130", "Pacote 10 sessões · R$ 910"] },
+      { name: "Costeleta Feminina", values: ["Sessão · R$ 50", "Pacote 10 sessões · R$ 350"] },
+      { name: "Virilha Completa Masculino", values: ["Sessão · R$ 200", "Pacote 10 sessões · R$ 1.400"] },
+      { name: "Axilas Masculino", values: ["Sessão · R$ 100", "Pacote 10 sessões · R$ 700"] },
+      { name: "Braço Masculino", values: ["Sessão · R$ 180", "Pacote 10 sessões · R$ 1.260"] },
+      { name: "Coxa Masculino", values: ["Sessão · R$ 150", "Pacote 10 sessões · R$ 1.050"] },
+      { name: "Meia Perna Masculino", values: ["Sessão · R$ 130", "Pacote 10 sessões · R$ 910"] },
+      { name: "Nádegas Masculino", values: ["Sessão · R$ 140", "Pacote 10 sessões · R$ 980"] },
+      { name: "Abdômen Masculino", values: ["Sessão · R$ 140", "Pacote 10 sessões · R$ 980"] },
+      { name: "Lombar Masculino", values: ["Sessão · R$ 120", "Pacote 10 sessões · R$ 840"] },
+      { name: "Abdômen + Tórax Masculino", values: ["Sessão · R$ 200", "Pacote 10 sessões · R$ 1.400"] },
+      { name: "Costas + Ombros Masculino", values: ["Sessão · R$ 250", "Pacote 10 sessões · R$ 1.750"] },
+      { name: "Barba Completa Masculino", values: ["Sessão · R$ 180", "Pacote 10 sessões · R$ 1.260"] },
+      { name: "Barba Contorno Masculino", values: ["Sessão · R$ 100", "Pacote 10 sessões · R$ 700"] },
+      { name: "Nuca Masculino", values: ["Sessão · R$ 60", "Pacote 10 sessões · R$ 420"] },
+      { name: "Ombro Masculino", values: ["Sessão · R$ 80", "Pacote 10 sessões · R$ 560"] },
+      { name: "Meio Braço Masculino", values: ["Sessão · R$ 100", "Pacote 10 sessões · R$ 700"] },
+      { name: "Costas Masculino", values: ["Sessão · R$ 180", "Pacote 10 sessões · R$ 1.260"] },
+      { name: "Orelha Masculino", values: ["Sessão · R$ 50", "Pacote 10 sessões · R$ 350"] },
+      { name: "Virilha Cavada Masculino", values: ["Sessão · R$ 130", "Pacote 10 sessões · R$ 910"] },
+      { name: "Tórax Masculino", values: ["Sessão · R$ 150", "Pacote 10 sessões · R$ 1.050"] },
+      { name: "Costeleta Masculino", values: ["Sessão · R$ 80", "Pacote 10 sessões · R$ 560"] },
+    ] },
     { eyebrow: "07 · Benefícios exclusivos", title: "Aya Club", description: "Condições exclusivas para pacientes da inauguração. Consulte benefícios, protocolos e planos personalizados.", entries: [{ name: "Aya Club", values: ["Condições personalizadas"] }] },
   ];
-  return <><Seo title="Menu Aya Face | Estética Avançada" description="Menu de tratamentos faciais, corporais e tecnologias da Aya Face em Jundiaí." /><Header /><main className="menu-page"><section className="menu-cover menu-pdf-cover"><div className="container menu-cover-inner"><span className="eyebrow">Menu Aya Face · Jundiaí</span><p>Tratamentos e protocolos de estética avançada com condições especiais de inauguração.</p></div></section>{sections.map(section => <section className="menu-pdf-section" key={section.title}><div className="container"><div className="menu-pdf-heading"><span className="eyebrow">{section.eyebrow}</span><h2>{section.title}</h2><p>{section.description}</p></div><div className="menu-pdf-list">{section.entries.map(entry => <article className="menu-pdf-entry" key={entry.name}><div><h3>{entry.name}</h3>{entry.description && <p>{entry.description}</p>}</div><div className="menu-pdf-values">{entry.values.map(value => <span key={value}>{value}</span>)}</div></article>)}</div><a className="menu-interest" href={whatsappFor(section.title)} target="_blank" rel="noreferrer"><WhatsAppIcon /> Tenho interesse no {section.title}</a></div></section>)}<section className="menu-footer-cta"><div className="container"><span className="eyebrow">Aya Face · Estética Avançada</span><p>Valores promocionais de inauguração válidos por 90 dias, com vagas limitadas. Procedimentos realizados após avaliação profissional.</p><a className="button button-whatsapp" href={whatsappFor("menu de tratamentos Aya Face")} target="_blank" rel="noreferrer"><WhatsAppIcon /> Falar no WhatsApp</a></div></section></main><Footer /></>;
+  return <><Seo title="Menu Aya Face | Estética Avançada" description="Menu de tratamentos faciais, corporais e tecnologias da Aya Face em Jundiaí." /><Header /><main className="menu-page"><section className="menu-cover menu-pdf-cover"><div className="container menu-cover-inner"><span className="eyebrow">Menu Aya Face · Jundiaí</span><p>Tratamentos e protocolos de estética avançada com condições especiais de inauguração.</p></div></section>{sections.filter(section => section.visible !== false).map(section => <section className="menu-pdf-section" key={section.title}><div className="container"><div className="menu-pdf-heading"><span className="eyebrow">{section.eyebrow}</span><h2>{section.title}</h2><p>{section.description}</p></div><div className="menu-pdf-list">{section.entries.map(entry => <article className="menu-pdf-entry" key={entry.name}><div><h3>{entry.name}</h3>{entry.description && <p>{entry.description}</p>}</div><div className="menu-pdf-values">{entry.values.map(value => { const match = value.match(/^De (.+) por (.+)$/); return match ? <span key={value}><span className="menu-pdf-old-price">{match[1]}</span> <strong>por {match[2]}</strong></span> : <span key={value}>{value}</span>; })}</div></article>)}</div><a className="menu-interest" href={whatsappFor(section.title)} target="_blank" rel="noreferrer"><WhatsAppIcon /> Tenho interesse no {section.title}</a></div></section>)}<section className="menu-footer-cta"><div className="container"><span className="eyebrow">Aya Face · Estética Avançada</span><p>Valores promocionais de inauguração válidos por 90 dias, com vagas limitadas. Procedimentos realizados após avaliação profissional.</p><a className="button button-whatsapp" href={whatsappFor("menu de tratamentos Aya Face")} target="_blank" rel="noreferrer"><WhatsAppIcon /> Falar no WhatsApp</a></div></section></main><Footer /></>;
 }
 function Services() {
   return <><Seo title="Tratamentos | Aya Face" description="Conheça todos os tratamentos faciais e corporais da Aya Face e as tecnologias usadas em protocolos personalizados." /><Header /><main className="page-main"><section className="page-hero services-hero"><div className="page-hero-constellation"><ConstellationCanvas variant="syringe" /><span className="syringe-visual-label">Tecnologia que transforma</span></div><div className="container"><span className="eyebrow">Precisão · Aya Face</span><h1>Cada Tratamento,<br /><em>um Resultado.</em></h1><p>Produtos com registro na ANVISA, protocolos de biossegurança e profissionais habilitados. Técnica aplicada com ciência, nunca no improviso.</p><a className="ghost" href="#procedimentos">Conheça os procedimentos</a></div></section><section className="section-pad services-catalog" id="procedimentos"><div className="container"><ProcedureGroup eyebrow="Tratamentos faciais" title="Cuidado que revela." description="Cuidados personalizados para realçar sua beleza e revitalizar sua pele." items={facialProcedures} /><ProcedureGroup eyebrow="Tratamentos corporais" title="Contorno com intenção." description="Dê adeus à gordura localizada e à flacidez e conquiste um corpo cuidado, firme e esculpido." items={bodyProcedures} /></div></section><section className="technology-section section-pad" id="tecnologias"><div className="container"><div className="technology-intro"><div><span className="eyebrow">Nossas principais tecnologias</span><h2>Precisão em<br /><em>cada escolha.</em></h2></div><p>Somos equipados com tecnologias avançadas. A equipe avalia o seu objetivo e indica o protocolo mais seguro e adequado para você.</p></div><div className="technology-grid">{technologyCatalog.map((technology, index) => <TechnologyCard key={technology.title} technology={technology} index={index} />)}</div></div></section><section className="mini-cta"><div className="container"><span className="eyebrow">Não sabe por onde começar?</span><h2>A avaliação existe<br /><em>para isso.</em></h2><a className="button button-whatsapp" href="https://wa.me/551148634866?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Aya%20Face" target="_blank" rel="noreferrer"><WhatsAppIcon /> Falar no WhatsApp</a></div></section></main><Footer /></>;
