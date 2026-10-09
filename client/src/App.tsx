@@ -14,7 +14,7 @@ const treatments = featuredTreatments;
 
 function Seo({ title, description }: { title: string; description: string }) {
   useEffect(() => {
-    const publicUrl = `https://clinica-aya-face.onrender.com${window.location.pathname}`;
+    const publicUrl = `${window.location.origin}${window.location.pathname}`;
     document.title = title;
     const setMeta = (selector: string, content: string) => document.querySelector(selector)?.setAttribute("content", content);
     setMeta('meta[name="description"]', description);
@@ -203,5 +203,10 @@ function Editor() { const auth = trpc.auth.me.useQuery(); const isAdmin = auth.d
 
 function slugify(value: string) { return value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, ""); }
 function Privacy() { return <><Header /><main className="legal-page"><div className="container narrow"><span className="eyebrow">Aya Face · Privacidade</span><h1>Política de<br /><em>privacidade.</em></h1><p>Os dados enviados no formulário são usados exclusivamente para contato sobre avaliação e atendimento. A Aya Face não vende ou compartilha seus dados para publicidade de terceiros.</p><p>Você pode solicitar atualização ou remoção dos seus dados pelo email clinicaayaface@gmail.com.</p></div></main><Footer /></>; }
-function App() { return <ErrorBoundary><ThemeProvider defaultTheme="dark"><Toaster position="top-center" /><Switch><Route path="/" component={Home} /><Route path="/servicos" component={Services} /><Route path="/menu-aya-face" component={MenuPage} /><Route path="/blog" component={Blog} /><Route path="/blog/:slug" component={Article} /><Route path="/editor" component={Editor} /><Route path="/privacidade" component={Privacy} /><Route><Home /></Route></Switch><WhatsAppFloat /></ThemeProvider></ErrorBoundary>; }
+function App() {
+  const hostname = window.location.hostname.toLowerCase();
+  const subdomainPage = hostname === "blog.ayaface.com.br" ? "blog" : hostname === "servicos.ayaface.com.br" ? "servicos" : hostname === "menu.ayaface.com.br" ? "menu" : null;
+  const isRoot = window.location.pathname === "/";
+  return <ErrorBoundary><ThemeProvider defaultTheme="dark"><Toaster position="top-center" />{subdomainPage && isRoot ? (subdomainPage === "blog" ? <Blog /> : subdomainPage === "servicos" ? <Services /> : <MenuPage />) : <Switch><Route path="/" component={Home} /><Route path="/servicos" component={Services} /><Route path="/menu-aya-face" component={MenuPage} /><Route path="/blog" component={Blog} /><Route path="/blog/:slug" component={Article} /><Route path="/editor" component={Editor} /><Route path="/privacidade" component={Privacy} /><Route><Home /></Route></Switch>}<WhatsAppFloat /></ThemeProvider></ErrorBoundary>;
+}
 export default App;
