@@ -224,7 +224,7 @@ Os efeitos são progressivos e variam conforme produto, área, técnica, metabol
 ## Home care e integração com tecnologias
 
 Fotoproteção, limpeza suave, hidratação e home care orientado podem apoiar a qualidade da pele. Quando fizer sentido, o plano pode integrar bioestimuladores com Uthera, Ultraformer, Lavieen ou outras tecnologias, respeitando indicações, intervalos e segurança. Este artigo é educativo e não substitui consulta, diagnóstico ou indicação individual.`,
-    coverImage: "/assets/procedure-comfort-facial.jpg",
+    coverImage: "/assets/procedure-comfort-facial.png",
     category: "Bioestimuladores · Cuidados",
     status: "published" as const,
     publishedAt: new Date("2026-10-08T21:30:00Z"),
