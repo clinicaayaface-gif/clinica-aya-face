@@ -585,3 +585,11 @@ img { content-visibility: auto; }
 
 .menu-pdf-old-price { color: #fff; text-decoration: line-through; text-decoration-thickness: 1px; opacity: .9; }
 .menu-pdf-values strong { color: var(--gold-light); font-weight: 500; }
+
+
+.footer-legal { color: rgba(255,255,255,.48); max-width: 270px; font-size: 11px; line-height: 1.65; margin: 10px 0 0; }
+
+
+.menu-pdf-cover .menu-cover-title { display: block; font-size: 23px; letter-spacing: .12em; }
+.menu-pdf-cover .menu-cover-subtitle { font-size: 14px; }
+@media (max-width: 600px) { .menu-pdf-cover .menu-cover-title { font-size: 18px; letter-spacing: .08em; } .menu-pdf-cover .menu-cover-subtitle { font-size: 13px; } }
