@@ -14,7 +14,7 @@ O efeito não é permanente. Fontes de saúde e bulas de produtos descrevem iní
 Antes de realizar botox em Jundiaí, confirme se o produto é registrado, está dentro da validade e tem marca e lote identificáveis. A Anvisa recomenda aplicação por profissional habilitado em serviço autorizado pela Vigilância Sanitária. Também é importante informar doenças, medicamentos, alergias, aplicações anteriores, gravidez ou amamentação, para que os riscos sejam avaliados adequadamente.
 
 Dor, vermelhidão, inchaço ou hematoma podem ocorrer no local. Sintomas como visão borrada, pálpebras caídas, fraqueza generalizada, dificuldade para falar, engolir ou respirar exigem contato especialista imediato ou ida ao pronto-socorro. Este texto é educativo e não substitui consulta, diagnóstico ou indicação personalizada. Na Aya Face, a conversa inicial ajuda a entender se a toxina botulínica faz sentido para o seu momento e para a sua expressão natural.`,
-    coverImage: "/assets/aya-tox.jpg",
+    coverImage: "/assets/Aplicação de Botox em Jundiaí saiba os preços, antes e depois, resultados e encontre a melhor clínica na região e perto de mim.png",
     category: "Botox · Jundiaí",
     status: "published" as const,
     publishedAt: new Date("2026-10-06T22:00:00Z"),
@@ -34,7 +34,7 @@ A Anvisa orienta utilizar medicamento registrado, dentro do prazo de validade, a
 Preço de botox em Jundiaí pode variar entre clínicas e ao longo do tempo. Anúncios e promoções mudam e não são evidência independente de qualidade ou resultado. Uma avaliação é o caminho para compreender se o procedimento é indicado, quais áreas fazem sentido e qual orçamento corresponde ao seu caso, sem prescrever dose ou prometer duração.
 
 A escolha segura considera informação, rastreabilidade, qualificação e acompanhamento. Se depois da aplicação surgirem visão borrada, pálpebras caídas, fala arrastada ou dificuldade para engolir ou respirar, procure atendimento especialista imediatamente. Na Aya Face, explicamos o protocolo e os cuidados antes de qualquer decisão, para que você compare propostas com mais clareza e tranquilidade.`,
-    coverImage: "/assets/aya-tox.jpg",
+    coverImage: "/assets/Aplicação de Botox em Jundiaí saiba os preços, antes e depois, resultados e encontre a melhor clínica na região e perto de mim.png",
     category: "Botox · Segurança",
     status: "published" as const,
     publishedAt: new Date("2026-10-06T22:05:00Z"),
@@ -54,7 +54,7 @@ A toxina botulínica atua principalmente sobre rugas dinâmicas, relacionadas ao
 Em Jundiaí, segurança também envolve verificar se o produto é registrado, se o estabelecimento está regularizado e se o profissional é habilitado para a atividade realizada. Histórico de saúde, medicamentos, alergias, infecção no local, gravidez, amamentação e doenças neuromusculares precisam ser discutidos em consulta. Não existe um cálculo online que substitua essa avaliação.
 
 O melhor preço é aquele que vem acompanhado de informação e responsabilidade, não necessariamente o menor anúncio. Se você está pesquisando botox no rosto em Jundiaí, converse com a Aya Face para entender as possibilidades, os limites e o investimento do seu protocolo antes de tomar uma decisão. Este conteúdo é educativo e não substitui orientação de especialista individualizada.`,
-    coverImage: "/assets/aya-tox.jpg",
+    coverImage: "/assets/Aplicação de Botox em Jundiaí saiba os preços, antes e depois, resultados e encontre a melhor clínica na região e perto de mim.png",
     category: "Botox · Preços",
     status: "published" as const,
     publishedAt: new Date("2026-10-06T22:10:00Z"),
@@ -74,7 +74,7 @@ Uma boa consulta não começa com uma dose pronta. Ela considera movimentos faci
 Em Jundiaí, confirme se o estabelecimento possui licença sanitária válida para o serviço. A licença não garante resultado, mas é um critério básico de funcionamento regular. Desconfie de pressão para decidir imediatamente, produto sem identificação, promessa de resultado garantido, ausência de prontuário ou preços muito abaixo sem explicação.
 
 Depois da aplicação, alterações como visão dupla ou borrada, pálpebras caídas, fraqueza generalizada, fala alterada ou dificuldade para engolir e respirar precisam de atendimento especialista imediato. Este artigo é um guia educativo, não uma autorização ou recomendação para qualquer pessoa. A decisão deve ocorrer após avaliação presencial, consentimento informado e confirmação de que o profissional e o serviço estão legalmente habilitados.`,
-    coverImage: "/assets/aya-tox.jpg",
+    coverImage: "/assets/Aplicação de Botox em Jundiaí saiba os preços, antes e depois, resultados e encontre a melhor clínica na região e perto de mim.png",
     category: "Botox · Profissional",
     status: "published" as const,
     publishedAt: new Date("2026-10-06T22:15:00Z"),
