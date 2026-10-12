@@ -1,9 +1,15 @@
 {
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Aya Face — Estética Avançada",
+    "documentationUrl": "https://ayaface.com.br/llms.txt",
+    "logoUrl": "https://ayaface.com.br/assets/aya-logo.png"
+  },
   "entries": [
     {
       "identifier": "urn:air:ayaface.com.br:website:home",
       "displayName": "Aya Face — Estética Avançada",
-      "type": "text/html",
+      "type": "application/ai-catalog+json",
       "url": "https://ayaface.com.br/",
       "description": "Site institucional da Aya Face, clínica de estética avançada em Jundiaí, São Paulo.",
       "capabilities": ["ClinicInformation", "ContactInformation", "LocationInformation"],
@@ -13,7 +19,7 @@
     {
       "identifier": "urn:air:ayaface.com.br:website:treatments",
       "displayName": "Tratamentos Aya Face",
-      "type": "text/html",
+      "type": "application/ai-catalog+json",
       "url": "https://ayaface.com.br/servicos",
       "description": "Catálogo de tratamentos faciais, corporais e tecnologias da Aya Face.",
       "capabilities": ["TreatmentCatalog", "EducationalInformation"],
@@ -23,7 +29,7 @@
     {
       "identifier": "urn:air:ayaface.com.br:website:blog",
       "displayName": "Blog Aya Face",
-      "type": "text/html",
+      "type": "application/ai-catalog+json",
       "url": "https://blog.ayaface.com.br/",
       "description": "Conteúdos educativos da Aya Face sobre estética, pele, tecnologias e cuidados.",
       "capabilities": ["EducationalContent", "BlogSearch"],
@@ -33,7 +39,7 @@
     {
       "identifier": "urn:air:ayaface.com.br:website:menu",
       "displayName": "Menu de Cuidados Aya Face",
-      "type": "text/html",
+      "type": "application/ai-catalog+json",
       "url": "https://ayaface.com.br/menu-aya-face",
       "description": "Menu de cuidados da Aya Face com serviços, descrições e valores informativos.",
       "capabilities": ["ServiceMenu", "PricingInformation", "ContactInformation"],

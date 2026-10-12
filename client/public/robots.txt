@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 Disallow: /editor
 Sitemap: https://ayaface.com.br/sitemap.xml
-Agentmap: https://ayaface.com.br/.well-known/ard.json

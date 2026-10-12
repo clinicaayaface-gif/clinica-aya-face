@@ -1,40 +1,50 @@
 {
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Aya Face — Estética Avançada",
+    "documentationUrl": "https://ayaface.com.br/llms.txt",
+    "logoUrl": "https://ayaface.com.br/assets/aya-logo.png"
+  },
   "entries": [
     {
       "identifier": "urn:air:ayaface.com.br:website:home",
       "displayName": "Aya Face — Estética Avançada",
-      "type": "text/html",
+      "type": "application/ai-catalog+json",
       "url": "https://ayaface.com.br/",
       "description": "Site institucional da Aya Face, clínica de estética avançada em Jundiaí, São Paulo.",
       "capabilities": ["ClinicInformation", "ContactInformation", "LocationInformation"],
-      "representativeQueries": ["onde fica a Aya Face em Jundiaí", "como falar com a Aya Face", "quais serviços a Aya Face oferece"]
+      "representativeQueries": ["onde fica a Aya Face em Jundiaí", "como falar com a Aya Face", "quais serviços a Aya Face oferece"],
+      "tags": ["estética avançada", "Jundiaí", "clínica de estética"]
     },
     {
       "identifier": "urn:air:ayaface.com.br:website:treatments",
       "displayName": "Tratamentos Aya Face",
-      "type": "text/html",
+      "type": "application/ai-catalog+json",
       "url": "https://ayaface.com.br/servicos",
       "description": "Catálogo de tratamentos faciais, corporais e tecnologias da Aya Face.",
       "capabilities": ["TreatmentCatalog", "EducationalInformation"],
-      "representativeQueries": ["quais tratamentos faciais a Aya Face oferece", "quais tecnologias estéticas estão disponíveis", "quais cuidados são indicados para minha pele"]
+      "representativeQueries": ["quais tratamentos faciais a Aya Face oferece", "quais tecnologias estéticas estão disponíveis", "quais cuidados são indicados para minha pele"],
+      "tags": ["botox", "Uthera", "Ultraformer", "bioestimuladores", "limpeza de pele"]
     },
     {
       "identifier": "urn:air:ayaface.com.br:website:blog",
       "displayName": "Blog Aya Face",
-      "type": "text/html",
+      "type": "application/ai-catalog+json",
       "url": "https://blog.ayaface.com.br/",
       "description": "Conteúdos educativos da Aya Face sobre estética, pele, tecnologias e cuidados.",
       "capabilities": ["EducationalContent", "BlogSearch"],
-      "representativeQueries": ["o que é botox", "qual a diferença entre Ultraformer e Uthera", "quais cuidados devo ter com bioestimuladores"]
+      "representativeQueries": ["o que é botox", "qual a diferença entre Ultraformer e Uthera", "quais cuidados devo ter com bioestimuladores"],
+      "tags": ["blog", "estética", "pele", "autocuidado"]
     },
     {
       "identifier": "urn:air:ayaface.com.br:website:menu",
       "displayName": "Menu de Cuidados Aya Face",
-      "type": "text/html",
+      "type": "application/ai-catalog+json",
       "url": "https://ayaface.com.br/menu-aya-face",
       "description": "Menu de cuidados da Aya Face com serviços, descrições e valores informativos.",
       "capabilities": ["ServiceMenu", "PricingInformation", "ContactInformation"],
-      "representativeQueries": ["qual o preço dos tratamentos da Aya Face", "quais serviços estão no menu Aya Face", "como demonstrar interesse em um tratamento"]
+      "representativeQueries": ["qual o preço dos tratamentos da Aya Face", "quais serviços estão no menu Aya Face", "como demonstrar interesse em um tratamento"],
+      "tags": ["menu", "serviços", "valores", "Jundiaí"]
     }
   ]
 }
