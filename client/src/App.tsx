@@ -14,7 +14,8 @@ const treatments = featuredTreatments;
 
 function Seo({ title, description }: { title: string; description: string }) {
   useEffect(() => {
-    const publicUrl = `${window.location.origin}${window.location.pathname}`;
+    const publicOrigin = window.location.hostname.endsWith(".onrender.com") ? "https://ayaface.com.br" : window.location.origin;
+    const publicUrl = `${publicOrigin}${window.location.pathname}`;
     document.title = title;
     const setMeta = (selector: string, content: string) => document.querySelector(selector)?.setAttribute("content", content);
     setMeta('meta[name="description"]', description);
