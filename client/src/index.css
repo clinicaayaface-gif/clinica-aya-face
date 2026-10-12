@@ -566,6 +566,7 @@ img { content-visibility: auto; }
 .menu-pdf-cover { min-height: 280px; }
 .menu-pdf-cover .menu-cover-inner { padding: 92px 24px 74px; }
 .menu-pdf-cover .menu-cover-inner p { max-width: 620px; }
+.menu-tox-image { display: block; width: min(100%, 360px); max-height: 460px; object-fit: cover; border-radius: 22px; margin: 28px auto 0; box-shadow: 0 24px 70px rgba(0,0,0,.35); }
 .menu-pdf-section { padding: 82px 0; background: #080808; border-bottom: 1px solid rgba(255,255,255,.13); }
 .menu-pdf-section:nth-of-type(odd) { background: #050505; }
 .menu-pdf-heading { display: grid; grid-template-columns: 1fr 1fr; gap: 16px 60px; align-items: end; margin-bottom: 38px; }

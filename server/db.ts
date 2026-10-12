@@ -129,7 +129,7 @@ export async function ensureBlogSeed() {
       } else {
         const current = existing[0];
         const isBotoxPost = post.slug.includes("botox");
-        const needsContentRefresh = current.title.includes("Utera") || current.excerpt.includes("Utera") || current.content.includes("Utera") || (isBotoxPost && (!current.content.includes("Dysport") || !current.content.includes("Nabota") || !current.content.includes("Botox Allergan")));
+        const needsContentRefresh = current.title.includes("Utera") || current.excerpt.includes("Utera") || current.content.includes("Utera") || (isBotoxPost && (current.coverImage !== post.coverImage || !current.content.includes("Dysport") || !current.content.includes("Nabota") || !current.content.includes("Botox Allergan") || current.content.includes("médico") || current.content.includes("médicos")));
         if (needsContentRefresh) {
           await db.update(blogPosts).set({ title: post.title, excerpt: post.excerpt, content: post.content, coverImage: post.coverImage, category: post.category, status: post.status, publishedAt: post.publishedAt }).where(eq(blogPosts.id, current.id));
         }
