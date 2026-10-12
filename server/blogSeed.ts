@@ -126,7 +126,7 @@ O preço depende da região tratada, do produto, da quantidade necessária, da c
 ## Home care e integração com nossas tecnologias
 
 A potencialização dos resultados pode envolver cuidados home care escolhidos para a necessidade da pele, como limpeza, hidratação, fotoproteção e ativos orientados pela equipe. Quando fizer sentido, o plano também pode integrar tecnologias da Aya Face, como Uthera, Ultraformer, Lavieen e outras soluções, respeitando o intervalo, a indicação e a segurança de cada etapa. O protocolo é construído de forma individual, sem promessas padronizadas.`,
-    coverImage: "/assets/procedure-bioestimulador.png",
+    coverImage: "/assets/Preenchimento harmonização facial acido hialuronico valor ML em Jundiaí saiba os preços, antes e depois, resultados e encontre a melhor clínica na região e promoção perto de mim.png",
     category: "Preenchimento · Segurança",
     status: "published" as const,
     publishedAt: new Date("2026-10-07T12:00:00Z"),
@@ -156,7 +156,7 @@ O preço e a duração dependem do produto, da quantidade, do objetivo, da anato
 ## Home care e integração com tecnologias
 
 Cuidados home care, hidratação, fotoproteção e ativos orientados podem apoiar a qualidade da pele. Quando fizer sentido, o protocolo pode ser integrado a tecnologias da Aya Face, respeitando intervalos e indicações. O objetivo é cuidar do conjunto, não apenas de uma região. Este artigo é educativo e não substitui avaliação individual.`,
-    coverImage: "/assets/illustration-facial-contour.jpg",
+    coverImage: "/assets/Preenchimento Labial em Jundiaí saiba os preços, antes e depois, resultados e encontre a melhor clínica marca na região e perto de mim.png",
     category: "Preenchimento · Cuidados",
     status: "published" as const,
     publishedAt: new Date("2026-10-08T19:00:00Z"),

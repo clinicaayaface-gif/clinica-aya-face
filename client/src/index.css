@@ -594,3 +594,9 @@ img { content-visibility: auto; }
 .menu-pdf-cover .menu-cover-title { display: block; font-size: 23px; letter-spacing: .12em; }
 .menu-pdf-cover .menu-cover-subtitle { font-size: 14px; }
 @media (max-width: 600px) { .menu-pdf-cover .menu-cover-title { font-size: 18px; letter-spacing: .08em; } .menu-pdf-cover .menu-cover-subtitle { font-size: 13px; } }
+
+/* Imagens verticais de tratamentos: mostrar a composição completa sem cortes. */
+.menu-entry-image { display: block; width: min(100%, 300px); height: 220px; object-fit: contain; object-position: left center; border-radius: 16px; margin-bottom: 16px; background: #0b0b0b; }
+.blog-card-image img, .blog-carousel-card img { object-fit: contain; background: #0b0b0b; }
+.article-cover { height: auto; max-height: 720px; object-fit: contain; background: #0b0b0b; }
+@media (max-width: 700px) { .menu-entry-image { width: 100%; height: auto; max-height: 430px; object-position: center; } }
