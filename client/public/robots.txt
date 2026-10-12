@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 Disallow: /editor
-Sitemap: https://clinica-aya-face.onrender.com/sitemap.xml
+ Sitemap: https://clinica-aya-face.onrender.com/sitemap.xml
+ Agentmap: https://clinica-aya-face.onrender.com/.well-known/ard.json
